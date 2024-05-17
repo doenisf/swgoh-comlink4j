@@ -1,5 +1,6 @@
 package io.github.doenisf.comlink4j.model.player.stat;
 
+import io.github.doenisf.comlink4j.model.events.raid.BucketItem;
 import io.github.doenisf.comlink4j.model.player.unit.CurrencyItem;
 import lombok.Getter;
 
@@ -19,6 +20,6 @@ public class StatMod {
     private Integer xp;
     private CurrencyItem levelCost;
     private Integer bonusQuantity;
-    // TODO: add converted Item
+    private BucketItem convertedItem;
     private Integer rerolledCount;
 }
