@@ -4,9 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbdc36b4-d0c9-4d4a-8ee7-612896496ca3" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="bbdc36b4-d0c9-4d4a-8ee7-612896496ca3" name="Changes" comment="Default constructor">
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/sf/util/GsonAdapterRegistrar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/sf/util/GsonEnumAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/de/sf/util/GsonAdapterRegistrarTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/SwgohComlinkClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/SwgohComlinkClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/model/events/CategoryMatchType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/model/events/CategoryMatchType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/model/events/CombatType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/model/events/CombatType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/model/events/GameEventDetailsType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/model/events/GameEventDetailsType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/model/events/GameEventStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/model/events/GameEventStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/model/events/GameEventType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/model/events/GameEventType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/model/events/GameEventUILocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/model/events/GameEventUILocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/model/events/raid/CampaignElementProgress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/model/events/raid/CampaignElementProgress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/model/events/raid/ItemType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/model/events/raid/ItemType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/model/events/raid/RaidOutcome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/model/events/raid/RaidOutcome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/model/events/raid/RaidState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/model/events/raid/RaidState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/model/events/territorybattle/zone/TerritoryCovertMissionResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/model/events/territorybattle/zone/TerritoryCovertMissionResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/model/events/territorybattle/zone/TerritoryZoneCommandState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/model/events/territorybattle/zone/TerritoryZoneCommandState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/model/events/territorybattle/zone/TerritoryZoneState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/model/events/territorybattle/zone/TerritoryZoneState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/model/events/territorywar/TerritoryWarSquadStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/model/events/territorywar/TerritoryWarSquadStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/model/guild/CampaignNodeDifficulty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/model/guild/CampaignNodeDifficulty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/model/guild/EnrollmentStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/model/guild/EnrollmentStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/model/guild/GuildInviteType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/model/guild/GuildInviteType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/model/guild/RoomType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/model/guild/RoomType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/model/guild/member/GuildMemberLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/model/guild/member/GuildMemberLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/model/guild/member/MemberContributionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/model/guild/member/MemberContributionType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/model/modifier/ActionLinkType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/model/modifier/ActionLinkType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/model/modifier/MaterialType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/model/modifier/MaterialType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/model/modifier/ModifierLocationType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/model/modifier/ModifierLocationType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/model/player/PlayerProfileTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/model/player/PlayerProfileTab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/model/player/pvp/BattleTargetingTactic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/model/player/pvp/BattleTargetingTactic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/model/player/pvp/SquadType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/model/player/pvp/SquadType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/model/player/pvp/SquadUnitType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/model/player/pvp/SquadUnitType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/model/player/stat/StatModTier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/model/player/stat/StatModTier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/model/player/stat/ThreatLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/model/player/stat/ThreatLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/model/player/stat/UnitStat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/model/player/stat/UnitStat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/model/player/unit/CurrencyType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/model/player/unit/CurrencyType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/model/player/unit/Rarity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/model/player/unit/Rarity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/model/player/unit/RelicTier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/model/player/unit/RelicTier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/sf/model/player/unit/UnitTier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sf/model/player/unit/UnitTier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/sf/SwgohComlinkClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/sf/SwgohComlinkClientTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,16 +55,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="JavaScript File" />
+        <option value="AnnotationType" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,12 +80,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="develop" />
-                    <option name="lastUsedInstant" value="1715949476" />
+                    <option name="branchName" value="feature/automatic-adapter-registering" />
+                    <option name="lastUsedInstant" value="1715950199" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1715949475" />
+                    <option name="branchName" value="develop" />
+                    <option name="lastUsedInstant" value="1715949476" />
                   </RecentBranch>
                 </list>
               </option>
@@ -72,11 +112,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.GsonAdapterRegistrarTest.testRegisterEnumAdapters.executor": "Debug",
     "JUnit.SwgohComlinkClientTest.executor": "Run",
     "JUnit.SwgohComlinkClientTest.testGetGuildById.executor": "Run",
     "JUnit.SwgohComlinkClientTest.testGetPlayerArenaProfileByAllyCode.executor": "Debug",
     "JUnit.SwgohComlinkClientTest.testGetPlayerArenaProfileById.executor": "Debug",
     "JUnit.SwgohComlinkClientTest.testGetPlayerByAllyCode.executor": "Run",
+    "JUnit.SwgohComlinkClientTest.testGetPlayerById.executor": "Debug",
     "OpenAPI/Swagger Code Generator.OAS.yaml.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -98,13 +140,30 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="de.sf.util" />
       <recent name="de.sf" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="de.sf.exception" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SwgohComlinkClientTest.testGetGuildById">
+  <component name="RunManager" selected="JUnit.SwgohComlinkClientTest.testGetPlayerById">
+    <configuration name="GsonAdapterRegistrarTest.testRegisterEnumAdapters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="swgoh-comlink4j" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.sf.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.sf.util" />
+      <option name="MAIN_CLASS_NAME" value="de.sf.util.GsonAdapterRegistrarTest" />
+      <option name="METHOD_NAME" value="testRegisterEnumAdapters" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SwgohComlinkClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="swgoh-comlink4j" />
       <extension name="coverage">
@@ -136,22 +195,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SwgohComlinkClientTest.testGetPlayerArenaProfileByAllyCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="swgoh-comlink4j" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="de.sf.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="de.sf" />
-      <option name="MAIN_CLASS_NAME" value="de.sf.SwgohComlinkClientTest" />
-      <option name="METHOD_NAME" value="testGetPlayerArenaProfileByAllyCode" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SwgohComlinkClientTest.testGetPlayerArenaProfileById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="swgoh-comlink4j" />
       <extension name="coverage">
@@ -168,7 +211,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SwgohComlinkClientTest.testGetPlayerByAllyCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SwgohComlinkClientTest.testGetPlayerById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="swgoh-comlink4j" />
       <extension name="coverage">
         <pattern>
@@ -178,7 +221,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="de.sf" />
       <option name="MAIN_CLASS_NAME" value="de.sf.SwgohComlinkClientTest" />
-      <option name="METHOD_NAME" value="testGetPlayerByAllyCode" />
+      <option name="METHOD_NAME" value="testGetPlayerById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -186,11 +229,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SwgohComlinkClientTest.testGetPlayerById" />
+        <item itemvalue="JUnit.GsonAdapterRegistrarTest.testRegisterEnumAdapters" />
         <item itemvalue="JUnit.SwgohComlinkClientTest.testGetGuildById" />
         <item itemvalue="JUnit.SwgohComlinkClientTest.testGetPlayerArenaProfileById" />
         <item itemvalue="JUnit.SwgohComlinkClientTest" />
-        <item itemvalue="JUnit.SwgohComlinkClientTest.testGetPlayerByAllyCode" />
-        <item itemvalue="JUnit.SwgohComlinkClientTest.testGetPlayerArenaProfileByAllyCode" />
       </list>
     </recent_temporary>
   </component>
@@ -212,7 +255,7 @@
       <workItem from="1715800352091" duration="7534000" />
       <workItem from="1715808041801" duration="1710000" />
       <workItem from="1715883809079" duration="8909000" />
-      <workItem from="1715944120353" duration="5815000" />
+      <workItem from="1715944120353" duration="7449000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -230,7 +273,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715949526210</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Default constructor">
+      <option name="closed" value="true" />
+      <created>1715949982159</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715949982159</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,20 +312,21 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Default constructor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Default constructor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/de/sf/SwgohComlinkClientTest.java</url>
-          <line>73</line>
-          <option name="timeStamp" value="7" />
+          <line>32</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/de/sf/SwgohComlinkClientTest.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="12" />
+          <url>file://$PROJECT_DIR$/src/main/java/de/sf/util/GsonAdapterRegistrar.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

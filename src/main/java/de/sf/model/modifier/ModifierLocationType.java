@@ -3,11 +3,13 @@ package de.sf.model.modifier;
 import com.google.gson.TypeAdapter;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import de.sf.util.GsonEnumAdapter;
 import lombok.Getter;
 
 import java.io.IOException;
 
 @Getter
+@GsonEnumAdapter
 public enum ModifierLocationType {
     ModifierLocationType_DEFAULT(0),
     MODIFIERLOCATIONCAMPAIGN(1),

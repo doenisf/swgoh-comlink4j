@@ -15,6 +15,7 @@ import de.sf.model.player.unit.*;
 import de.sf.model.player.stat.StatModTier;
 import de.sf.model.player.stat.ThreatLevel;
 import de.sf.model.player.stat.UnitStat;
+import de.sf.util.GsonAdapterRegistrar;
 import de.sf.util.PreRequest;
 import okhttp3.*;
 
@@ -29,8 +30,8 @@ public class SwgohComlinkClient {
     private final Gson gson;
     private final PreRequest preRequest;
     private final String apiKey;
-    
-    private SwgohComlinkClient() {
+
+    public SwgohComlinkClient() {
         this("http://localhost:8080", "my-access-key", "my-secret-key", "");
     }
 
@@ -39,19 +40,9 @@ public class SwgohComlinkClient {
         this.accessKey = accessKey;
         this.secretKey = secretKey;
         this.client = new OkHttpClient();
-        this.gson = new GsonBuilder()
-                .registerTypeAdapter(RelicTier.class, new RelicTier.Adapter())
-                .registerTypeAdapter(UnitTier.class, new UnitTier.Adapter())
-                .registerTypeAdapter(UnitStat.class, new UnitStat.Adapter())
-                .registerTypeAdapter(StatModTier.class, new StatModTier.Adapter())
-                .registerTypeAdapter(CurrencyType.class, new CurrencyType.Adapter())
-                .registerTypeAdapter(Rarity.class, new Rarity.Adapter())
-                .registerTypeAdapter(PlayerProfileTab.class, new PlayerProfileTab.Adapter())
-                .registerTypeAdapter(BattleTargetingTactic.class, new BattleTargetingTactic.Adapter())
-                .registerTypeAdapter(SquadType.class, new SquadType.Adapter())
-                .registerTypeAdapter(ThreatLevel.class, new ThreatLevel.Adapter())
-                .registerTypeAdapter(SquadUnitType.class, new SquadUnitType.Adapter())
-                .create();
+        GsonBuilder builder = new GsonBuilder();
+        GsonAdapterRegistrar.registerEnumAdapters(builder);
+        this.gson = builder.create();
         this.preRequest = new PreRequest();
         this.apiKey = apiKey;
     }
