@@ -22,15 +22,22 @@ import java.io.IOException;
 
 public class SwgohComlinkClient {
 
-    private static final String BASE_URL = "http://localhost:8080";
-    private static final String accessKey = "my-access-key";
-    private static final String secretKey = "my-secret-key";
+    private final String BASE_URL;
+    private final String accessKey;
+    private final String secretKey;
     private final OkHttpClient client;
     private final Gson gson;
     private final PreRequest preRequest;
-    private final String apiKey; // Ihr API-Schlüssel hier
+    private final String apiKey;
+    
+    private SwgohComlinkClient() {
+        this("http://localhost:8080", "my-access-key", "my-secret-key", "");
+    }
 
-    public SwgohComlinkClient(String apiKey) {
+    public SwgohComlinkClient(String baseUrl, String accessKey, String secretKey, String apiKey) {
+        this.BASE_URL = baseUrl;
+        this.accessKey = accessKey;
+        this.secretKey = secretKey;
         this.client = new OkHttpClient();
         this.gson = new GsonBuilder()
                 .registerTypeAdapter(RelicTier.class, new RelicTier.Adapter())
