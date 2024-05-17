@@ -3,11 +3,13 @@ package de.sf.model.modifier;
 import com.google.gson.TypeAdapter;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import de.sf.util.GsonEnumAdapter;
 import lombok.Getter;
 
 import java.io.IOException;
 
 @Getter
+@GsonEnumAdapter
 public enum MaterialType {
     MaterialType_DEFAULT(0),
     CRAFTINGMATERIAL(1),

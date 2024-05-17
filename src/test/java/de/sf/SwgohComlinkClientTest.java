@@ -10,7 +10,7 @@ public class SwgohComlinkClientTest {
 
     @Test
     public void testGetPlayerByAllyCode() {
-        SwgohComlinkClient client = new SwgohComlinkClient("");
+        SwgohComlinkClient client = new SwgohComlinkClient();
         Integer allyCode = 315242232;
 
         try {
@@ -24,7 +24,7 @@ public class SwgohComlinkClientTest {
 
     @Test
     public void testGetPlayerById() {
-        SwgohComlinkClient client = new SwgohComlinkClient("");
+        SwgohComlinkClient client = new SwgohComlinkClient();
         String id = "DTKHijF-Qtah6ExyOB9eFA";
 
         try {
@@ -38,7 +38,7 @@ public class SwgohComlinkClientTest {
 
     @Test
     public void testGetPlayerArenaProfileByAllyCode() {
-        SwgohComlinkClient client = new SwgohComlinkClient("");
+        SwgohComlinkClient client = new SwgohComlinkClient();
         Integer allyCode = 315242232;
 
         try {
@@ -52,7 +52,7 @@ public class SwgohComlinkClientTest {
 
     @Test
     public void testGetPlayerArenaProfileById() {
-        SwgohComlinkClient client = new SwgohComlinkClient("");
+        SwgohComlinkClient client = new SwgohComlinkClient();
         String id = "DTKHijF-Qtah6ExyOB9eFA";
 
         try {
@@ -66,7 +66,7 @@ public class SwgohComlinkClientTest {
 
     @Test
     public void testGetGuildById() {
-        SwgohComlinkClient client = new SwgohComlinkClient("");
+        SwgohComlinkClient client = new SwgohComlinkClient();
         String guildId = "c2rZ5wg3RBOUQ8Ie2A77jg";
 
         try {

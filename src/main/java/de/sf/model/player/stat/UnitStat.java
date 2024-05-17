@@ -3,6 +3,7 @@ package de.sf.model.player.stat;
 import com.google.gson.TypeAdapter;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import de.sf.util.GsonEnumAdapter;
 import lombok.Getter;
 
 import java.io.IOException;
@@ -10,6 +11,7 @@ import java.io.IOException;
 import java.io.IOException;
 
 @Getter
+@GsonEnumAdapter
 public enum UnitStat {
     UnitStat_DEFAULT(0),
     UNITSTATMAXHEALTH(1),

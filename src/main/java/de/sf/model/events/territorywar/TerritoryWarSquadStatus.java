@@ -3,11 +3,13 @@ package de.sf.model.events.territorywar;
 import com.google.gson.TypeAdapter;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import de.sf.util.GsonEnumAdapter;
 import lombok.Getter;
 
 import java.io.IOException;
 
 @Getter
+@GsonEnumAdapter
 public enum TerritoryWarSquadStatus {
     TerritoryWarSquadStatus_DEFAULT(0),
     SQUADAVAILABLE(1),

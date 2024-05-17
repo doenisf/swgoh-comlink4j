@@ -3,11 +3,13 @@ package de.sf.model.player.unit;
 import com.google.gson.TypeAdapter;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import de.sf.util.GsonEnumAdapter;
 import lombok.Getter;
 
 import java.io.IOException;
 
 @Getter
+@GsonEnumAdapter
 public enum Rarity {
     Rarity_DEFAULT(0),
     ONESTAR(1),

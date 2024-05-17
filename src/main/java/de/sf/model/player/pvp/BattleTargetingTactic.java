@@ -3,11 +3,13 @@ package de.sf.model.player.pvp;
 import com.google.gson.TypeAdapter;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import de.sf.util.GsonEnumAdapter;
 import lombok.Getter;
 
 import java.io.IOException;
 
 @Getter
+@GsonEnumAdapter
 public enum BattleTargetingTactic {
     BattleTargetingTactic_DEFAULT(0),
     TARGETRANDOM(1),
