@@ -1,21 +1,28 @@
 package io.github.doenisf.comlink4j;
 
-import io.github.doenisf.comlink4j.SwgohComlinkClient;
 import io.github.doenisf.comlink4j.model.guild.Guild;
 import io.github.doenisf.comlink4j.model.player.Player;
 import io.github.doenisf.comlink4j.model.player.PlayerArenaProfile;
+import org.junit.Before;
 import org.junit.Test;
+import org.junit.jupiter.api.BeforeAll;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class SwgohComlinkClientTest {
+    SwgohComlinkApi client;
+
+    @Before
+    public void initTests() {
+        client = new SwgohComlinkClient();
+    }
 
     @Test
     public void testGetPlayerByAllyCode() {
-        SwgohComlinkClient client = new SwgohComlinkClient();
         Integer allyCode = 315242232;
 
         try {
-            Player player = client.getPlayerByAllyCode(allyCode);
+            Player player = client.getPlayer(allyCode);
             assertNotNull(player);
             assertEquals(allyCode.toString(), player.getAllyCode());
         } catch (Exception e) {
@@ -25,11 +32,10 @@ public class SwgohComlinkClientTest {
 
     @Test
     public void testGetPlayerById() {
-        SwgohComlinkClient client = new SwgohComlinkClient();
         String id = "DTKHijF-Qtah6ExyOB9eFA";
 
         try {
-            Player player = client.getPlayerById(id);
+            Player player = client.getPlayer(id);
             assertNotNull(player);
             assertEquals(id, player.getPlayerId());
         } catch (Exception e) {
@@ -39,11 +45,10 @@ public class SwgohComlinkClientTest {
 
     @Test
     public void testGetPlayerArenaProfileByAllyCode() {
-        SwgohComlinkClient client = new SwgohComlinkClient();
         Integer allyCode = 315242232;
 
         try {
-            PlayerArenaProfile playerArenaProfile = client.getPlayerArenaProfileByAllyCode(allyCode);
+            PlayerArenaProfile playerArenaProfile = client.getPlayerArenaProfile(allyCode);
             assertNotNull(playerArenaProfile);
             assertEquals(allyCode.longValue(), playerArenaProfile.getAllyCode());
         } catch (Exception e) {
@@ -53,11 +58,10 @@ public class SwgohComlinkClientTest {
 
     @Test
     public void testGetPlayerArenaProfileById() {
-        SwgohComlinkClient client = new SwgohComlinkClient();
         String id = "DTKHijF-Qtah6ExyOB9eFA";
 
         try {
-            PlayerArenaProfile playerArenaProfile = client.getPlayerArenaProfileById(id);
+            PlayerArenaProfile playerArenaProfile = client.getPlayerArenaProfile(id);
             assertNotNull(playerArenaProfile);
             assertEquals(id, playerArenaProfile.getPlayerId());
         } catch (Exception e) {
@@ -67,11 +71,10 @@ public class SwgohComlinkClientTest {
 
     @Test
     public void testGetGuildById() {
-        SwgohComlinkClient client = new SwgohComlinkClient();
         String guildId = "c2rZ5wg3RBOUQ8Ie2A77jg";
 
         try {
-            Guild guild = client.getGuildById(guildId);
+            Guild guild = client.getGuild(guildId);
             assertNotNull(guild);
             assertEquals(guildId, guild.getProfile().getId());
         } catch (Exception e) {
