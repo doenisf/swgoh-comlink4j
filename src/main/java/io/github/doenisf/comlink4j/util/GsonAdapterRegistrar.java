@@ -5,8 +5,10 @@ import org.reflections.Reflections;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.Set;
+import java.util.logging.Logger;
 
 public class GsonAdapterRegistrar {
+    private static final Logger LOGGER = Logger.getLogger(GsonAdapterRegistrar.class.getName());
     public static final String BASE_PACKAGE = "io.github.doenisf";
 
     public static void registerEnumAdapters(GsonBuilder gsonBuilder) {
@@ -21,11 +23,10 @@ public class GsonAdapterRegistrar {
                         gsonBuilder.registerTypeAdapter(enumClass, innerClass.getConstructor().newInstance());
                     }
                 }
-//                Field adapterField = enumClass.getDeclaredField("Adapter");
-//                Class<?> adapterClass = adapterField.getType();
-//                gsonBuilder.registerTypeAdapter(enumClass, adapterClass.newInstance());
-            } catch (IllegalAccessException | InstantiationException | NoSuchMethodException | InvocationTargetException e){
-                e.printStackTrace();
+            } catch (IllegalAccessException | InstantiationException | NoSuchMethodException |
+                     InvocationTargetException e) {
+                LOGGER.warning("Failed to register adapter for " + enumClass.getSimpleName() + "! Response objects may" +
+                        " not contain all info returned by the API. Cause: " + e);
             }
         }
     }
