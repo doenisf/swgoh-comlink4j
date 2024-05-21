@@ -4,44 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbdc36b4-d0c9-4d4a-8ee7-612896496ca3" name="Changes" comment="Added Logger to GsonAdapterRegistrar">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/events/EntryCategoryAllowed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/events/EntryCategoryAllowed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/events/GameEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/events/GameEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/events/raid/BucketItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/events/raid/BucketItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/events/territorybattle/zone/recon/TerritoryReconZoneUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/events/territorybattle/zone/recon/TerritoryReconZoneUnit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/events/territorywar/TerritoryWarPlayerStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/events/territorywar/TerritoryWarPlayerStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/events/territorywar/TerritoryWarSquad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/events/territorywar/TerritoryWarSquad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/events/territorywar/UnitTierSummary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/events/territorywar/UnitTierSummary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/guild/GuildInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/guild/GuildInventory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/guild/GuildInviteStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/guild/GuildInviteStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/player/PlayerArenaProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/player/PlayerArenaProfile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/player/datacron/DatacronAffix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/datacron/datacron/DatacronAffix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/player/datacron/DatacronBattleStat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/datacron/datacron/DatacronBattleStat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/player/pvp/BattleTargetingTactic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/pvp/pvp/BattleTargetingTactic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/player/pvp/PvpProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/player/PvpProfile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/player/pvp/Squad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/pvp/pvp/Squad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/player/pvp/SquadCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/pvp/pvp/SquadCell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/player/pvp/SquadType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/pvp/pvp/SquadType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/player/pvp/SquadUnitType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/pvp/pvp/SquadUnitType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/player/stat/Stat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/stat/stat/Stat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/player/stat/StatDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/stat/stat/StatDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/player/stat/StatMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/stat/stat/StatMod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/player/stat/StatModStat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/stat/stat/StatModStat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/player/stat/StatModTier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/stat/stat/StatModTier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/player/stat/ThreatLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/stat/stat/ThreatLevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/player/stat/UnitBattleStat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/stat/stat/UnitBattleStat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/player/stat/UnitStat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/stat/stat/UnitStat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/player/unit/CurrencyItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/unit/unit/CurrencyItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/player/unit/CurrencyType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/unit/unit/CurrencyType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/player/unit/Equipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/unit/unit/Equipment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/player/unit/Rarity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/unit/unit/Rarity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/player/unit/Relic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/unit/unit/Relic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/player/unit/RelicTier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/unit/unit/RelicTier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/player/unit/Skill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/unit/unit/Skill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/player/unit/Unit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/unit/unit/Unit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/player/unit/UnitTier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/unit/unit/UnitTier.java" afterDir="false" />
+    <list default="true" id="bbdc36b4-d0c9-4d4a-8ee7-612896496ca3" name="Changes" comment="Refactoring and package reorganization">
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/SwgohComlinkClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/SwgohComlinkClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -288,7 +252,7 @@
       <workItem from="1716295512491" duration="484000" />
       <workItem from="1716296762842" duration="1739000" />
       <workItem from="1716298707438" duration="5296000" />
-      <workItem from="1716304806836" duration="1386000" />
+      <workItem from="1716304806836" duration="3384000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -362,7 +326,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716302546772</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Refactoring and package reorganization">
+      <option name="closed" value="true" />
+      <created>1716306314660</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1716306314660</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,7 +372,8 @@
     <MESSAGE value="Publishing to maven central instead of ossrh" />
     <MESSAGE value="Methods now defined in API interface instead of Client implementation" />
     <MESSAGE value="Added Logger to GsonAdapterRegistrar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Logger to GsonAdapterRegistrar" />
+    <MESSAGE value="Refactoring and package reorganization" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring and package reorganization" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -414,11 +387,6 @@
           <url>file://$PROJECT_DIR$/src/test/java/io/github/doenisf/comlink4j/util/GsonAdapterRegistrarTest.java</url>
           <line>18</line>
           <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/SwgohComlinkApi.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/io/github/doenisf/comlink4j/SwgohComlinkClientTest.java</url>
