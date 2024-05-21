@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbdc36b4-d0c9-4d4a-8ee7-612896496ca3" name="Changes" comment="Added documentation">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="bbdc36b4-d0c9-4d4a-8ee7-612896496ca3" name="Changes" comment="Updated README.md">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,40 +71,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.GsonAdapterRegistrarTest.testRegisterEnumAdapters (1).executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.GsonAdapterRegistrarTest.testRegisterEnumAdapters.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.SwgohComlinkClientTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SwgohComlinkClientTest.testGetGuildById.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SwgohComlinkClientTest.testGetPlayerArenaProfileByAllyCode.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.SwgohComlinkClientTest.testGetPlayerArenaProfileById.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.SwgohComlinkClientTest.testGetPlayerByAllyCode.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.SwgohComlinkClientTest.testGetPlayerById.executor&quot;: &quot;Debug&quot;,
-    &quot;Maven.swgoh-comlink4j [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.swgoh-comlink4j [deploy].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.swgoh-comlink4j [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.swgoh-comlink4j [org.apache.maven.plugins:maven-deploy-plugin:3.1.1:deploy].executor&quot;: &quot;Run&quot;,
-    &quot;OpenAPI/Swagger Code Generator.OAS.yaml.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.GsonAdapterRegistrarTest.testRegisterEnumAdapters (1).executor": "Debug",
+    "JUnit.GsonAdapterRegistrarTest.testRegisterEnumAdapters.executor": "Debug",
+    "JUnit.SwgohComlinkClientTest.executor": "Run",
+    "JUnit.SwgohComlinkClientTest.testGetGuildById.executor": "Run",
+    "JUnit.SwgohComlinkClientTest.testGetPlayerArenaProfileByAllyCode.executor": "Debug",
+    "JUnit.SwgohComlinkClientTest.testGetPlayerArenaProfileById.executor": "Debug",
+    "JUnit.SwgohComlinkClientTest.testGetPlayerByAllyCode.executor": "Debug",
+    "JUnit.SwgohComlinkClientTest.testGetPlayerById.executor": "Debug",
+    "Maven.swgoh-comlink4j [clean].executor": "Run",
+    "Maven.swgoh-comlink4j [deploy].executor": "Run",
+    "Maven.swgoh-comlink4j [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
+    "Maven.swgoh-comlink4j [org.apache.maven.plugins:maven-deploy-plugin:3.1.1:deploy].executor": "Run",
+    "OpenAPI/Swagger Code Generator.OAS.yaml.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.externalResources",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -253,7 +252,7 @@
       <workItem from="1716295512491" duration="484000" />
       <workItem from="1716296762842" duration="1739000" />
       <workItem from="1716298707438" duration="5296000" />
-      <workItem from="1716304806836" duration="4679000" />
+      <workItem from="1716304806836" duration="4994000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -343,7 +342,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716309993466</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Updated README.md">
+      <option name="closed" value="true" />
+      <created>1716311355492</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1716311355492</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -383,7 +390,8 @@
     <MESSAGE value="Added Logger to GsonAdapterRegistrar" />
     <MESSAGE value="Refactoring and package reorganization" />
     <MESSAGE value="Added documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added documentation" />
+    <MESSAGE value="Updated README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated README.md" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -417,5 +425,9 @@
         <watch expression="player.rosterUnit.get(0).currentLevel" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
