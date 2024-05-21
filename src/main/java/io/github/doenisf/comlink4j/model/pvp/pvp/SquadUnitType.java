@@ -1,4 +1,4 @@
-package io.github.doenisf.comlink4j.model.player.pvp;
+package io.github.doenisf.comlink4j.model.pvp.pvp;
 
 import com.google.gson.TypeAdapter;
 import com.google.gson.stream.JsonReader;

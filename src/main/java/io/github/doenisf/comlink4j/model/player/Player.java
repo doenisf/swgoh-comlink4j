@@ -1,7 +1,6 @@
 package io.github.doenisf.comlink4j.model.player;
 
-import io.github.doenisf.comlink4j.model.player.pvp.PvpProfile;
-import io.github.doenisf.comlink4j.model.player.unit.Unit;
+import io.github.doenisf.comlink4j.model.unit.unit.Unit;
 import lombok.Getter;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package io.github.doenisf.comlink4j.model.player.unit;
+package io.github.doenisf.comlink4j.model.unit.unit;
 
 import com.google.gson.TypeAdapter;
 import com.google.gson.stream.JsonReader;

@@ -1,6 +1,6 @@
 package io.github.doenisf.comlink4j.model.guild;
 
-import io.github.doenisf.comlink4j.model.player.unit.Unit;
+import io.github.doenisf.comlink4j.model.unit.unit.Unit;
 import lombok.Getter;
 
 @Getter

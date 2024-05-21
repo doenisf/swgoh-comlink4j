@@ -13,7 +13,10 @@ import okhttp3.*;
 
 import java.io.IOException;
 
-public class SwgohComlinkClient {
+/**
+ * A client for interacting with the SWGOH Comlink API.
+ */
+public class SwgohComlinkClient implements SwgohComlinkApi {
 
     private final String BASE_URL;
     private final String accessKey;
@@ -21,13 +24,29 @@ public class SwgohComlinkClient {
     private final OkHttpClient client;
     private final Gson gson;
     private final PreRequest preRequest;
-    private final String apiKey;
 
+    /**
+     * Default constructor with predefined base URL, access key, and secret key.
+     * Defaults are:
+     *
+     * <table>
+     *     <tr><td>baseUrl</td><td>http://localhost:8080</td></tr>
+     *     <tr><td>accessKey</td><td>my-access-key</td></tr>
+     *     <tr><td>secretKey</td><td>my-secret-key</td></tr>
+     * </table>
+     */
     public SwgohComlinkClient() {
-        this("http://localhost:8080", "my-access-key", "my-secret-key", "");
+        this("http://localhost:8080", "my-access-key", "my-secret-key");
     }
 
-    public SwgohComlinkClient(String baseUrl, String accessKey, String secretKey, String apiKey) {
+    /**
+     * Constructs a new SwgohComlinkClient with the specified parameters.
+     *
+     * @param baseUrl    the base URL of the API
+     * @param accessKey  the access key for authentication
+     * @param secretKey  the secret key for authentication
+     */
+    public SwgohComlinkClient(String baseUrl, String accessKey, String secretKey) {
         this.BASE_URL = baseUrl;
         this.accessKey = accessKey;
         this.secretKey = secretKey;
@@ -36,45 +55,20 @@ public class SwgohComlinkClient {
         GsonAdapterRegistrar.registerEnumAdapters(builder);
         this.gson = builder.create();
         this.preRequest = new PreRequest();
-        this.apiKey = apiKey;
     }
 
-    public Player getPlayerByAllyCode(Integer allyCode) throws Exception {
-        String endpoint = "/player";
-        // JSON payload
-        String json = "{ \"payload\": { \"allyCode\": \"" + allyCode + "\" } }";
-        return (Player) postToApi(Player.class, endpoint, json);
-    }
-
-    public Player getPlayerById(String playerId) throws Exception {
-        String endpoint = "/player";
-        // JSON payload
-        String json = "{ \"payload\": { \"playerId\": \"" + playerId + "\" } }";
-        return (Player) postToApi(Player.class, endpoint, json);
-    }
-
-    public PlayerArenaProfile getPlayerArenaProfileByAllyCode(Integer allyCode) throws Exception {
-        String endpoint = "/playerArena";
-        // JSON payload
-        String json = "{ \"payload\": { \"allyCode\": \"" + allyCode + "\" } }";
-        return (PlayerArenaProfile) postToApi(PlayerArenaProfile.class, endpoint, json);
-    }
-
-    public PlayerArenaProfile getPlayerArenaProfileById(String playerId) throws Exception {
-        String endpoint = "/playerArena";
-        // JSON payload
-        String json = "{ \"payload\": { \"playerId\": \"" + playerId + "\" } }";
-        return (PlayerArenaProfile) postToApi(PlayerArenaProfile.class, endpoint, json);
-    }
-
-    public Guild getGuildById(String guildId) throws ApiException {
-        String endpoint = "/guild";
-        // JSON payload
-        String json = "{ \"payload\": { \"guildId\": \"" + guildId + "\" } }";
-        return ((GuildResponse) postToApi(GuildResponse.class, endpoint, json)).getGuild();
-    }
-
-    private <T> Object postToApi(Class<T> target, String endpoint, String jsonBody) throws ApiException {
+    /**
+     * Sends a POST request to the specified API endpoint with the given JSON body.
+     *
+     * @param <T>        the type of the response object
+     * @param target     the class of the response object
+     * @param endpoint   the API endpoint to send the request to
+     * @param jsonBody   the JSON body to include in the request
+     * @return           the response object parsed from JSON
+     * @throws ApiException if the request fails or if there is a network error
+     */
+    @Override
+    public <T> Object postToApi(Class<T> target, String endpoint, String jsonBody) throws ApiException {
         // Request body
         RequestBody body = RequestBody.create(
                 jsonBody, MediaType.get("application/json; charset=utf-8"));
