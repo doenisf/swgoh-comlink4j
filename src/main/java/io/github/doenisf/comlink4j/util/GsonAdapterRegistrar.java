@@ -7,7 +7,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Set;
 
 public class GsonAdapterRegistrar {
-    public static final String BASE_PACKAGE = "de.sf";
+    public static final String BASE_PACKAGE = "io.github.doenisf";
 
     public static void registerEnumAdapters(GsonBuilder gsonBuilder) {
         Reflections reflections = new Reflections(BASE_PACKAGE); // Replace with your base package
