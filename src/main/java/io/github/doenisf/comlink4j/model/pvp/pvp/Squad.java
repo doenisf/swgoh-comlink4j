@@ -1,6 +1,6 @@
-package io.github.doenisf.comlink4j.model.player.pvp;
+package io.github.doenisf.comlink4j.model.pvp.pvp;
 
-import io.github.doenisf.comlink4j.model.player.datacron.DatacronBattleStat;
+import io.github.doenisf.comlink4j.model.datacron.datacron.DatacronBattleStat;
 import lombok.Getter;
 
 import java.util.List;

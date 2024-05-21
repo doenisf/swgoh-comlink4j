@@ -1,4 +1,4 @@
-package io.github.doenisf.comlink4j.model.player.stat;
+package io.github.doenisf.comlink4j.model.stat.stat;
 
 import lombok.Getter;
 

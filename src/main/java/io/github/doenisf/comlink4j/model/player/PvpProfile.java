@@ -1,6 +1,6 @@
-package io.github.doenisf.comlink4j.model.player.pvp;
+package io.github.doenisf.comlink4j.model.player;
 
-import io.github.doenisf.comlink4j.model.player.PlayerProfileTab;
+import io.github.doenisf.comlink4j.model.pvp.pvp.Squad;
 import lombok.Getter;
 
 @Getter

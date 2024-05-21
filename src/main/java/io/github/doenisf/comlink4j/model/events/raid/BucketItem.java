@@ -1,8 +1,8 @@
 package io.github.doenisf.comlink4j.model.events.raid;
 
-import io.github.doenisf.comlink4j.model.player.stat.StatMod;
-import io.github.doenisf.comlink4j.model.player.unit.Rarity;
-import io.github.doenisf.comlink4j.model.player.unit.UnitTier;
+import io.github.doenisf.comlink4j.model.stat.stat.StatMod;
+import io.github.doenisf.comlink4j.model.unit.unit.Rarity;
+import io.github.doenisf.comlink4j.model.unit.unit.UnitTier;
 import lombok.Getter;
 
 @Getter

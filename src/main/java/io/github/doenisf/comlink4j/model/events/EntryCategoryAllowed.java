@@ -1,8 +1,8 @@
 package io.github.doenisf.comlink4j.model.events;
 
-import io.github.doenisf.comlink4j.model.player.unit.Rarity;
-import io.github.doenisf.comlink4j.model.player.unit.RelicTier;
-import io.github.doenisf.comlink4j.model.player.unit.UnitTier;
+import io.github.doenisf.comlink4j.model.unit.unit.Rarity;
+import io.github.doenisf.comlink4j.model.unit.unit.RelicTier;
+import io.github.doenisf.comlink4j.model.unit.unit.UnitTier;
 import lombok.Getter;
 
 import java.util.List;

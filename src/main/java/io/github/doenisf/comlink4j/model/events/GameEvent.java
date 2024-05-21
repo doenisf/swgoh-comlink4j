@@ -2,7 +2,7 @@ package io.github.doenisf.comlink4j.model.events;
 
 import io.github.doenisf.comlink4j.model.guild.CampaignElementIdentifier;
 import io.github.doenisf.comlink4j.model.events.raid.RankRewardPreview;
-import io.github.doenisf.comlink4j.model.player.pvp.SquadType;
+import io.github.doenisf.comlink4j.model.pvp.pvp.SquadType;
 import lombok.Getter;
 
 import java.util.List;

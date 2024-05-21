@@ -1,7 +1,7 @@
-package io.github.doenisf.comlink4j.model.player.unit;
+package io.github.doenisf.comlink4j.model.unit.unit;
 
-import io.github.doenisf.comlink4j.model.player.stat.StatDef;
-import io.github.doenisf.comlink4j.model.player.stat.StatMod;
+import io.github.doenisf.comlink4j.model.stat.stat.StatDef;
+import io.github.doenisf.comlink4j.model.stat.stat.StatMod;
 import lombok.Getter;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package io.github.doenisf.comlink4j.model.player.datacron;
+package io.github.doenisf.comlink4j.model.datacron.datacron;
 
 import lombok.Getter;
 

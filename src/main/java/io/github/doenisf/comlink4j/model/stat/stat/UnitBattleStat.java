@@ -1,8 +1,8 @@
-package io.github.doenisf.comlink4j.model.player.stat;
+package io.github.doenisf.comlink4j.model.stat.stat;
 
-import io.github.doenisf.comlink4j.model.player.unit.RelicTier;
-import io.github.doenisf.comlink4j.model.player.unit.Skill;
-import io.github.doenisf.comlink4j.model.player.unit.UnitTier;
+import io.github.doenisf.comlink4j.model.unit.unit.RelicTier;
+import io.github.doenisf.comlink4j.model.unit.unit.Skill;
+import io.github.doenisf.comlink4j.model.unit.unit.UnitTier;
 import lombok.Getter;
 
 import java.util.List;

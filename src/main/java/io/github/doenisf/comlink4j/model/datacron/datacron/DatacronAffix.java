@@ -1,8 +1,8 @@
-package io.github.doenisf.comlink4j.model.player.datacron;
+package io.github.doenisf.comlink4j.model.datacron.datacron;
 
-import io.github.doenisf.comlink4j.model.player.unit.RelicTier;
-import io.github.doenisf.comlink4j.model.player.unit.UnitTier;
-import io.github.doenisf.comlink4j.model.player.stat.UnitStat;
+import io.github.doenisf.comlink4j.model.unit.unit.RelicTier;
+import io.github.doenisf.comlink4j.model.unit.unit.UnitTier;
+import io.github.doenisf.comlink4j.model.stat.stat.UnitStat;
 import lombok.Getter;
 
 import java.util.List;

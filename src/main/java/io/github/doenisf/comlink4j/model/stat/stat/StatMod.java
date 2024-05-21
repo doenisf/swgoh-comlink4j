@@ -1,6 +1,6 @@
-package io.github.doenisf.comlink4j.model.player.stat;
+package io.github.doenisf.comlink4j.model.stat.stat;
 
-import io.github.doenisf.comlink4j.model.player.unit.CurrencyItem;
+import io.github.doenisf.comlink4j.model.unit.unit.CurrencyItem;
 import lombok.Getter;
 
 import java.util.List;
