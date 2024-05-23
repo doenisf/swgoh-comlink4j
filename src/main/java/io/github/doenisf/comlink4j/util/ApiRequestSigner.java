@@ -60,16 +60,11 @@ public class ApiRequestSigner {
         hmacSHA256.update(bodyMd5Hex.getBytes(StandardCharsets.UTF_8));
         byte[] hmacDigest = hmacSHA256.doFinal();
         String hmacDigestHex = bytesToHex(hmacDigest);
-        LOGGER.info(hmacDigestHex);
 
         // Create headers
         Map<String, String> headers = new HashMap<>();
         headers.put("X-Date", reqTimeStr);
         headers.put("Authorization", "HMAC-SHA256 Credential=" + accessKey + ",Signature=" + hmacDigestHex);
-
-        headers.forEach((k, v) -> {
-            LOGGER.info(k + " :: " + v);
-        });
 
         return headers;
     }
