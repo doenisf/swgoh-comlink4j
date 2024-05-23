@@ -3,15 +3,15 @@ package io.github.doenisf.comlink4j;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import io.github.doenisf.comlink4j.exception.ApiException;
-import io.github.doenisf.comlink4j.model.guild.Guild;
-import io.github.doenisf.comlink4j.model.guild.GuildResponse;
-import io.github.doenisf.comlink4j.model.player.PlayerArenaProfile;
-import io.github.doenisf.comlink4j.model.player.Player;
+import io.github.doenisf.comlink4j.util.ApiRequestSigner;
 import io.github.doenisf.comlink4j.util.GsonAdapterRegistrar;
-import io.github.doenisf.comlink4j.util.PreRequest;
 import okhttp3.*;
 
 import java.io.IOException;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+import java.util.Date;
+import java.util.Map;
 
 /**
  * A client for interacting with the SWGOH Comlink API.
@@ -23,28 +23,35 @@ public class SwgohComlinkClient implements SwgohComlinkApi {
     private final String secretKey;
     private final OkHttpClient client;
     private final Gson gson;
-    private final PreRequest preRequest;
 
     /**
-     * Default constructor with predefined base URL, access key, and secret key.
-     * Defaults are:
-     *
-     * <table>
-     *     <tr><td>baseUrl</td><td>http://localhost:8080</td></tr>
-     *     <tr><td>accessKey</td><td>my-access-key</td></tr>
-     *     <tr><td>secretKey</td><td>my-secret-key</td></tr>
-     * </table>
+     * Default constructor with predefined base URL and empty access and secret keys. This won't work
+     * if you have set up your comlink to require authentication.
+     * <br>
+     * The default url is <a href="http://localhost:3000">http://localhost:3000"</a>
+     * <br>
+     * Use this setup when using the setup described <a href="https://github.com/swgoh-utils/swgoh-comlink/wiki/Getting-Started#deploying-with-docker">here</a>.
      */
     public SwgohComlinkClient() {
-        this("http://localhost:8080", "my-access-key", "my-secret-key");
+        this("http://localhost:3000", null, null);
+    }
+
+    /**
+     * Default constructor with your specific base URL and empty access and secret keys.
+     * This won't work if you have set up your comlink to require authentication.
+     *
+     * @param baseUrl the base URL (URL and port) of the API
+     */
+    public SwgohComlinkClient(String baseUrl) {
+        this(baseUrl, null, null);
     }
 
     /**
      * Constructs a new SwgohComlinkClient with the specified parameters.
      *
-     * @param baseUrl    the base URL of the API
-     * @param accessKey  the access key for authentication
-     * @param secretKey  the secret key for authentication
+     * @param baseUrl   the base URL (URL and port) of the API
+     * @param accessKey the access key for authentication
+     * @param secretKey the secret key for authentication
      */
     public SwgohComlinkClient(String baseUrl, String accessKey, String secretKey) {
         this.BASE_URL = baseUrl;
@@ -54,17 +61,16 @@ public class SwgohComlinkClient implements SwgohComlinkApi {
         GsonBuilder builder = new GsonBuilder();
         GsonAdapterRegistrar.registerEnumAdapters(builder);
         this.gson = builder.create();
-        this.preRequest = new PreRequest();
     }
 
     /**
      * Sends a POST request to the specified API endpoint with the given JSON body.
      *
-     * @param <T>        the type of the response object
-     * @param target     the class of the response object
-     * @param endpoint   the API endpoint to send the request to
-     * @param jsonBody   the JSON body to include in the request
-     * @return           the response object parsed from JSON
+     * @param <T>      the type of the response object
+     * @param target   the class of the response object
+     * @param endpoint the API endpoint to send the request to
+     * @param jsonBody the JSON body to include in the request
+     * @return the response object parsed from JSON
      * @throws ApiException if the request fails or if there is a network error
      */
     @Override
@@ -74,10 +80,22 @@ public class SwgohComlinkClient implements SwgohComlinkApi {
                 jsonBody, MediaType.get("application/json; charset=utf-8"));
 
         // HTTP request
-        Request request = new Request.Builder()
+        Request.Builder requestBuilder = new Request.Builder()
                 .url(BASE_URL + endpoint)
-                .post(body)
-                .build();
+                .post(body);
+        if (accessKey != null && secretKey != null) {
+            try {
+                Map<String, String> headers = ApiRequestSigner
+                        .signPostRequest(gson, new Date().getTime(), BASE_URL + endpoint,
+                                "POST", jsonBody, accessKey, secretKey);
+                requestBuilder.addHeader("X-Date", headers.getOrDefault("X-Date", ""));
+                requestBuilder.addHeader("Authorization", headers.getOrDefault("Authorization", ""));
+            } catch (NoSuchAlgorithmException | InvalidKeyException e) {
+                throw new ApiException("Error while signing the request.", e);
+            }
+        }
+
+        Request request = requestBuilder.build();
 
         try (Response response = client.newCall(request).execute()) {
             System.out.println(response);
@@ -90,4 +108,5 @@ public class SwgohComlinkClient implements SwgohComlinkApi {
             throw new ApiException("Network error", e);
         }
     }
+
 }
