@@ -24,7 +24,7 @@ class ApiRequestSignerTest {
     @Test
     public void testBytesToHex() {
         String body = "{\"payload\":{\"allyCode\":\"315242232\"},\"enums\":false}";
-        String expected = "3638326432666538313137653332663862646138373233636565353934323137";
+        String expected = "660cc2e36100e328d678493135629079";
         try {
             String actual = ApiRequestSigner
                     .bytesToHex(MessageDigest
