@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bbdc36b4-d0c9-4d4a-8ee7-612896496ca3" name="Changes" comment="Fixed test">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/maven-publish.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="feature/github-actions-publish" />
+                    <option name="lastUsedInstant" value="1716561270" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="feature/maven-publish" />
+                    <option name="lastUsedInstant" value="1715951926" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="develop" />
+                    <option name="lastUsedInstant" value="1715949476" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2gW5Af59Q4i9AqLcIecnbYVDMF0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.ApiRequestSignerTest.testBytesToHex.executor": "Run",
+    "JUnit.ApiRequestSignerTest.testGetPath.executor": "Run",
+    "JUnit.ApiRequestSignerTest.testSignPostRequest.executor": "Run",
+    "JUnit.GsonAdapterRegistrarTest.testRegisterEnumAdapters.executor": "Debug",
+    "JUnit.SwgohComlinkClientTest.executor": "Run",
+    "JUnit.SwgohComlinkClientTest.testGetGuildById.executor": "Run",
+    "JUnit.SwgohComlinkClientTest.testGetPlayerArenaProfileByAllyCode.executor": "Debug",
+    "JUnit.SwgohComlinkClientTest.testGetPlayerArenaProfileById.executor": "Debug",
+    "JUnit.SwgohComlinkClientTest.testGetPlayerByAllyCode.executor": "Run",
+    "JUnit.SwgohComlinkClientTest.testGetPlayerById.executor": "Debug",
+    "Maven.swgoh-comlink4j [clean].executor": "Run",
+    "Maven.swgoh-comlink4j [deploy].executor": "Run",
+    "Maven.swgoh-comlink4j [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
+    "Maven.swgoh-comlink4j [org.apache.maven.plugins:maven-deploy-plugin:3.1.1:deploy].executor": "Run",
+    "OpenAPI/Swagger Code Generator.OAS.yaml.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="io.github.doenisf.commlink4j" />
+      <recent name="de.sf.commlink4j" />
+      <recent name="de.sf.commlink4j.util" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="io.github.doenisf.comlink4j.util" />
+      <recent name="de.sf.util" />
+      <recent name="de.sf" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io.github.doenisf.comlink4j" />
+      <recent name="de.sf.exception" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ApiRequestSignerTest.testBytesToHex">
+    <configuration name="ApiRequestSignerTest.testBytesToHex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="swgoh-comlink4j" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.doenisf.comlink4j.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.github.doenisf.comlink4j.util" />
+      <option name="MAIN_CLASS_NAME" value="io.github.doenisf.comlink4j.util.ApiRequestSignerTest" />
+      <option name="METHOD_NAME" value="testBytesToHex" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiRequestSignerTest.testGetPath" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="swgoh-comlink4j" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.doenisf.comlink4j.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.github.doenisf.comlink4j.util" />
+      <option name="MAIN_CLASS_NAME" value="io.github.doenisf.comlink4j.util.ApiRequestSignerTest" />
+      <option name="METHOD_NAME" value="testGetPath" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiRequestSignerTest.testSignPostRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="swgoh-comlink4j" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.doenisf.comlink4j.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.github.doenisf.comlink4j.util" />
+      <option name="MAIN_CLASS_NAME" value="io.github.doenisf.comlink4j.util.ApiRequestSignerTest" />
+      <option name="METHOD_NAME" value="testSignPostRequest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SwgohComlinkClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="swgoh-comlink4j" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.doenisf.comlink4j.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.github.doenisf.comlink4j" />
+      <option name="MAIN_CLASS_NAME" value="io.github.doenisf.comlink4j.SwgohComlinkClientTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SwgohComlinkClientTest.testGetPlayerByAllyCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="swgoh-comlink4j" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.doenisf.comlink4j.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.github.doenisf.comlink4j" />
+      <option name="MAIN_CLASS_NAME" value="io.github.doenisf.comlink4j.SwgohComlinkClientTest" />
+      <option name="METHOD_NAME" value="testGetPlayerByAllyCode" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ApiRequestSignerTest.testBytesToHex" />
+        <item itemvalue="JUnit.SwgohComlinkClientTest" />
+        <item itemvalue="JUnit.ApiRequestSignerTest.testSignPostRequest" />
+        <item itemvalue="JUnit.SwgohComlinkClientTest.testGetPlayerByAllyCode" />
+        <item itemvalue="JUnit.ApiRequestSignerTest.testGetPath" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-corretto-21.0.1-f644763e9732-eed86825" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bbdc36b4-d0c9-4d4a-8ee7-612896496ca3" name="Changes" comment="" />
+      <created>1715800351060</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715800351060</updated>
+      <workItem from="1715800352091" duration="7534000" />
+      <workItem from="1715808041801" duration="1710000" />
+      <workItem from="1715883809079" duration="8909000" />
+      <workItem from="1715944120353" duration="7449000" />
+      <workItem from="1716496436205" duration="2147000" />
+      <workItem from="1716560121325" duration="1412000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1715949459988</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715949459988</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1715949526210</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715949526210</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Default constructor">
+      <option name="closed" value="true" />
+      <created>1715949982159</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715949982159</updated>
+    </task>
+    <task id="LOCAL-00004" summary="refactoring">
+      <option name="closed" value="true" />
+      <created>1715955494665</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715955494665</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Prepare for maven central release">
+      <option name="closed" value="true" />
+      <created>1715955511030</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715955511030</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Implemented authentication and updated documentation">
+      <option name="closed" value="true" />
+      <created>1716497306401</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716497306401</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Removed unnecessary logs from ApiRequestSigner">
+      <option name="closed" value="true" />
+      <created>1716497524804</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716497524804</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Fixed test">
+      <option name="closed" value="true" />
+      <created>1716497647152</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1716497647152</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Fixed test">
+      <option name="closed" value="true" />
+      <created>1716561462723</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1716561462723</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="feature/more-endpoitns" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="feature/more-endpoitns" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="Default constructor" />
+    <MESSAGE value="refactoring" />
+    <MESSAGE value="Prepare for maven central release" />
+    <MESSAGE value="Implemented authentication and updated documentation" />
+    <MESSAGE value="Removed unnecessary logs from ApiRequestSigner" />
+    <MESSAGE value="Fixed test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed test" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/de/sf/SwgohComlinkClientTest.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/sf/util/GsonAdapterRegistrar.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="de.sf.model.player.rosterUnit.RosterUnit" memberName="equippedStatMod" />
+        <PinnedItemInfo parentTag="de.sf.model.player.rosterUnit.StatModStat" memberName="rolls" />
+        <PinnedItemInfo parentTag="de.sf.model.player.rosterUnit.RosterUnit" memberName="unitStat" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="player.rosterUnit.get(0).currentLevel" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
