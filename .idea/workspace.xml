@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbdc36b4-d0c9-4d4a-8ee7-612896496ca3" name="Changes" comment="Fixed test">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/maven-publish.yml" afterDir="false" />
+    <list default="true" id="bbdc36b4-d0c9-4d4a-8ee7-612896496ca3" name="Changes" comment="Added github actions pipeline">
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
+        <entry key="$PROJECT_DIR$" value="feature/github-actions-publish" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,6 +41,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1716561965" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="feature/github-actions-publish" />
                     <option name="lastUsedInstant" value="1716561270" />
@@ -239,7 +244,7 @@
       <workItem from="1715883809079" duration="8909000" />
       <workItem from="1715944120353" duration="7449000" />
       <workItem from="1716496436205" duration="2147000" />
-      <workItem from="1716560121325" duration="1412000" />
+      <workItem from="1716560121325" duration="1832000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -313,7 +318,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716561462723</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added github actions pipeline">
+      <option name="closed" value="true" />
+      <created>1716561687662</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1716561687662</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,7 +378,8 @@
     <MESSAGE value="Implemented authentication and updated documentation" />
     <MESSAGE value="Removed unnecessary logs from ApiRequestSigner" />
     <MESSAGE value="Fixed test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed test" />
+    <MESSAGE value="Added github actions pipeline" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added github actions pipeline" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
