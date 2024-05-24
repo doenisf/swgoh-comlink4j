@@ -2,6 +2,9 @@
 
 <!-- next-version-placeholder-->
 
+## 0.2.1
+- Publish should now work via GitHub actions as defined in the [pipeline](.github/workflows/maven-publish.yml)
+
 ## 0.2.0
 - No parameter constructor now using the default port 3000 instead of 8080
 - Implemented support for authorization with access and secret key
