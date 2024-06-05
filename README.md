@@ -34,8 +34,8 @@ Basic default usage example:
 ````java
 import io.github.doenisf.comlink4j.SwgohComlinkApi;
 import io.github.doenisf.comlink4j.SwgohComlinkClient;
-import io.github.doenisf.comlink4j.model.guild.Guild;
-import io.github.doenisf.comlink4j.model.player.Player;
+import io.github.doenisf.comlink4j.model.endpoints.guild.Guild;
+import io.github.doenisf.comlink4j.model.endpoints.player.Player;
 
 SwgohComlinkApi api = new SwgohComlinkClient();
 Player player = api.getPlayer(315242232);
