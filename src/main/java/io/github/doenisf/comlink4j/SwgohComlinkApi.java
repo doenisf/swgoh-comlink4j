@@ -274,7 +274,7 @@ public interface SwgohComlinkApi {
      * @throws ApiException if the request fails or if there is a network error
      */
     default <T> Object postToApi(Class<T> target, String endpoint) throws ApiException {
-        return postToApi(target, endpoint, "");
+        return postToApi(target, endpoint, "{}");
     }
 
     /**

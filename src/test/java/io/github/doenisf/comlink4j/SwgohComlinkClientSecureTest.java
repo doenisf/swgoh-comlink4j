@@ -97,8 +97,8 @@ public class SwgohComlinkClientSecureTest {
 
     @Test
     public void testGetGameData() {
-        String version = "0.34.0:ZTn8vxfzQHCXBzHCro8wkg";
         try {
+            String version = client.getGameMetaData().getLatestGamedataVersion();
             GameData gameData = client.getGameData(version);
             assertNotNull(gameData);
         } catch (Exception e) {
@@ -112,7 +112,7 @@ public class SwgohComlinkClientSecureTest {
             GameMetaData metaData = client.getGameMetaData();
             assertNotNull(metaData.getLatestGamedataVersion());
         } catch (Exception e) {
-            fail("Exception should not be thrown: " + e.getMessage());
+            fail("Exception should not be thrown: " + e);
         }
     }
 }
