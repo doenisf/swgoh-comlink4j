@@ -118,7 +118,7 @@ public class SwgohComlinkClient implements SwgohComlinkApi {
             String jsonResponse = response.body().string();
             return gson.fromJson(jsonResponse, target);
         } catch (IOException | ApiException e) {
-            throw new ApiException("Network error", e, null);
+            throw new ApiException(e.getMessage(), e, null);
         }
     }
 

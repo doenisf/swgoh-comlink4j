@@ -1,6 +1,7 @@
 package io.github.doenisf.comlink4j.exception;
 
 import lombok.Getter;
+import lombok.ToString;
 import okhttp3.Response;
 
 @Getter
@@ -24,5 +25,13 @@ public class ApiException extends Exception {
     public ApiException(Throwable cause, Response apiResponse) {
         super(cause);
         this.apiResponse = apiResponse;
+    }
+
+    @Override
+    public String toString() {
+        return "ApiException{" +
+                "message=" + this.getMessage() + ',' +
+                "apiResponse=" + apiResponse +
+                '}';
     }
 }
