@@ -3,6 +3,7 @@ package io.github.doenisf.comlink4j;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import io.github.doenisf.comlink4j.exception.ApiException;
+import io.github.doenisf.comlink4j.model.ErrorResponse;
 import io.github.doenisf.comlink4j.util.ApiRequestSigner;
 import io.github.doenisf.comlink4j.util.GsonAdapterRegistrar;
 import okhttp3.*;
@@ -75,14 +76,22 @@ public class SwgohComlinkClient implements SwgohComlinkApi {
      */
     @Override
     public <T> Object postToApi(Class<T> target, String endpoint, String jsonBody) throws ApiException {
-        // Request body
-        RequestBody body = RequestBody.create(
-                jsonBody, MediaType.get("application/json; charset=utf-8"));
-
         // HTTP request
         Request.Builder requestBuilder = new Request.Builder()
-                .url(BASE_URL + endpoint)
-                .post(body);
+                .url(BASE_URL + endpoint);
+
+        if (jsonBody != null && !jsonBody.isEmpty() && !jsonBody.isBlank()) {
+            // Request body
+            RequestBody body = RequestBody.create(
+                    jsonBody, MediaType.get("application/json; charset=utf-8"));
+            requestBuilder.post(body);
+        }
+        else {
+            RequestBody body = RequestBody.create(
+                    "", MediaType.get("application/json; charset=utf-8"));
+            requestBuilder.post(body);
+        }
+
         if (accessKey != null && secretKey != null) {
             try {
                 Map<String, String> headers = ApiRequestSigner
@@ -91,21 +100,25 @@ public class SwgohComlinkClient implements SwgohComlinkApi {
                 requestBuilder.addHeader("X-Date", headers.getOrDefault("X-Date", ""));
                 requestBuilder.addHeader("Authorization", headers.getOrDefault("Authorization", ""));
             } catch (NoSuchAlgorithmException | InvalidKeyException e) {
-                throw new ApiException("Error while signing the request.", e);
+                throw new ApiException("Error while signing the request.", e, null);
             }
         }
 
         Request request = requestBuilder.build();
 
         try (Response response = client.newCall(request).execute()) {
-            System.out.println(response);
             if (!response.isSuccessful() || response.body() == null) {
-                throw new ApiException("Request failed: " + response.message());
+                if (response.body() == null) {
+                    throw new ApiException("Request failed with status code " + response.code() + ": " + response.message(), response);
+                } else {
+                    ErrorResponse errorResponse = gson.fromJson(response.body().string(), ErrorResponse.class);
+                    throw new ApiException("Request failed with status code " + response.code() + ": " + errorResponse.getMessage(), response);
+                }
             }
             String jsonResponse = response.body().string();
             return gson.fromJson(jsonResponse, target);
         } catch (IOException | ApiException e) {
-            throw new ApiException("Network error", e);
+            throw new ApiException(e.getMessage(), e, null);
         }
     }
 

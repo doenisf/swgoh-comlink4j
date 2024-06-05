@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbdc36b4-d0c9-4d4a-8ee7-612896496ca3" name="Changes" comment="Fixed test">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/maven-publish.yml" afterDir="false" />
+    <list default="true" id="bbdc36b4-d0c9-4d4a-8ee7-612896496ca3" name="Changes" comment="Optimized exception handling">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/SwgohComlinkApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/SwgohComlinkApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/util/ApiRequestSigner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/util/ApiRequestSigner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/doenisf/comlink4j/SwgohComlinkClientSecureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/doenisf/comlink4j/SwgohComlinkClientSecureTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +20,10 @@
       <list>
         <option value="JavaScript File" />
         <option value="AnnotationType" />
+        <option value="JUnit5 Test Class" />
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -30,6 +34,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
@@ -41,8 +46,8 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="feature/github-actions-publish" />
-                    <option name="lastUsedInstant" value="1716561270" />
+                    <option name="branchName" value="feature/data-endpoint" />
+                    <option name="lastUsedInstant" value="1716567086" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="feature/maven-publish" />
@@ -77,20 +82,29 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "JUnit.ApiRequestSignerTest.testBytesToHex.executor": "Run",
+    "JUnit.ApiRequestSignerTest.testBytesToHex.executor": "Debug",
     "JUnit.ApiRequestSignerTest.testGetPath.executor": "Run",
     "JUnit.ApiRequestSignerTest.testSignPostRequest.executor": "Run",
+    "JUnit.GameDataTest.testGameDataParser.executor": "Run",
     "JUnit.GsonAdapterRegistrarTest.testRegisterEnumAdapters.executor": "Debug",
-    "JUnit.SwgohComlinkClientTest.executor": "Run",
+    "JUnit.SwgohComlinkClientSecureTest.testGetGameData.executor": "Run",
+    "JUnit.SwgohComlinkClientSecureTest.testGetGameDataWithoutVersion.executor": "Run",
+    "JUnit.SwgohComlinkClientSecureTest.testGetGameMetaData.executor": "Debug",
+    "JUnit.SwgohComlinkClientSecureTest.testGetGuildById.executor": "Run",
+    "JUnit.SwgohComlinkClientTest.executor": "Debug",
+    "JUnit.SwgohComlinkClientTest.testGetGameData.executor": "Debug",
+    "JUnit.SwgohComlinkClientTest.testGetGameDataWithoutVersion.executor": "Debug",
+    "JUnit.SwgohComlinkClientTest.testGetGameMetaData.executor": "Debug",
     "JUnit.SwgohComlinkClientTest.testGetGuildById.executor": "Run",
     "JUnit.SwgohComlinkClientTest.testGetPlayerArenaProfileByAllyCode.executor": "Debug",
-    "JUnit.SwgohComlinkClientTest.testGetPlayerArenaProfileById.executor": "Debug",
+    "JUnit.SwgohComlinkClientTest.testGetPlayerArenaProfileById.executor": "Run",
     "JUnit.SwgohComlinkClientTest.testGetPlayerByAllyCode.executor": "Run",
     "JUnit.SwgohComlinkClientTest.testGetPlayerById.executor": "Debug",
     "Maven.swgoh-comlink4j [clean].executor": "Run",
     "Maven.swgoh-comlink4j [deploy].executor": "Run",
     "Maven.swgoh-comlink4j [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
     "Maven.swgoh-comlink4j [org.apache.maven.plugins:maven-deploy-plugin:3.1.1:deploy].executor": "Run",
+    "Maven.swgoh-comlink4j [test].executor": "Run",
     "OpenAPI/Swagger Code Generator.OAS.yaml.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -103,9 +117,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
@@ -129,56 +143,40 @@
       <recent name="de.sf.exception" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ApiRequestSignerTest.testBytesToHex">
-    <configuration name="ApiRequestSignerTest.testBytesToHex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SwgohComlinkClientSecureTest.testGetGameMetaData">
+    <configuration name="SwgohComlinkClientSecureTest.testGetGameData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="swgoh-comlink4j" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.github.doenisf.comlink4j.util.*" />
+          <option name="PATTERN" value="io.github.doenisf.comlink4j.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="io.github.doenisf.comlink4j.util" />
-      <option name="MAIN_CLASS_NAME" value="io.github.doenisf.comlink4j.util.ApiRequestSignerTest" />
-      <option name="METHOD_NAME" value="testBytesToHex" />
+      <option name="PACKAGE_NAME" value="io.github.doenisf.comlink4j" />
+      <option name="MAIN_CLASS_NAME" value="io.github.doenisf.comlink4j.SwgohComlinkClientSecureTest" />
+      <option name="METHOD_NAME" value="testGetGameData" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiRequestSignerTest.testGetPath" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SwgohComlinkClientSecureTest.testGetGameMetaData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="swgoh-comlink4j" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.github.doenisf.comlink4j.util.*" />
+          <option name="PATTERN" value="io.github.doenisf.comlink4j.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="io.github.doenisf.comlink4j.util" />
-      <option name="MAIN_CLASS_NAME" value="io.github.doenisf.comlink4j.util.ApiRequestSignerTest" />
-      <option name="METHOD_NAME" value="testGetPath" />
+      <option name="PACKAGE_NAME" value="io.github.doenisf.comlink4j" />
+      <option name="MAIN_CLASS_NAME" value="io.github.doenisf.comlink4j.SwgohComlinkClientSecureTest" />
+      <option name="METHOD_NAME" value="testGetGameMetaData" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiRequestSignerTest.testSignPostRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="swgoh-comlink4j" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.github.doenisf.comlink4j.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="io.github.doenisf.comlink4j.util" />
-      <option name="MAIN_CLASS_NAME" value="io.github.doenisf.comlink4j.util.ApiRequestSignerTest" />
-      <option name="METHOD_NAME" value="testSignPostRequest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SwgohComlinkClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SwgohComlinkClientTest.testGetGameData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="swgoh-comlink4j" />
       <extension name="coverage">
         <pattern>
@@ -188,12 +186,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="io.github.doenisf.comlink4j" />
       <option name="MAIN_CLASS_NAME" value="io.github.doenisf.comlink4j.SwgohComlinkClientTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="testGetGameData" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SwgohComlinkClientTest.testGetPlayerByAllyCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SwgohComlinkClientTest.testGetGameDataWithoutVersion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="swgoh-comlink4j" />
       <extension name="coverage">
         <pattern>
@@ -203,7 +202,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="io.github.doenisf.comlink4j" />
       <option name="MAIN_CLASS_NAME" value="io.github.doenisf.comlink4j.SwgohComlinkClientTest" />
-      <option name="METHOD_NAME" value="testGetPlayerByAllyCode" />
+      <option name="METHOD_NAME" value="testGetGameDataWithoutVersion" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SwgohComlinkClientTest.testGetGameMetaData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="swgoh-comlink4j" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.doenisf.comlink4j.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.github.doenisf.comlink4j" />
+      <option name="MAIN_CLASS_NAME" value="io.github.doenisf.comlink4j.SwgohComlinkClientTest" />
+      <option name="METHOD_NAME" value="testGetGameMetaData" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -211,11 +226,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ApiRequestSignerTest.testBytesToHex" />
-        <item itemvalue="JUnit.SwgohComlinkClientTest" />
-        <item itemvalue="JUnit.ApiRequestSignerTest.testSignPostRequest" />
-        <item itemvalue="JUnit.SwgohComlinkClientTest.testGetPlayerByAllyCode" />
-        <item itemvalue="JUnit.ApiRequestSignerTest.testGetPath" />
+        <item itemvalue="JUnit.SwgohComlinkClientSecureTest.testGetGameMetaData" />
+        <item itemvalue="JUnit.SwgohComlinkClientSecureTest.testGetGameData" />
+        <item itemvalue="JUnit.SwgohComlinkClientTest.testGetGameData" />
+        <item itemvalue="JUnit.SwgohComlinkClientTest.testGetGameMetaData" />
+        <item itemvalue="JUnit.SwgohComlinkClientTest.testGetGameDataWithoutVersion" />
       </list>
     </recent_temporary>
   </component>
@@ -238,8 +253,12 @@
       <workItem from="1715808041801" duration="1710000" />
       <workItem from="1715883809079" duration="8909000" />
       <workItem from="1715944120353" duration="7449000" />
-      <workItem from="1716496436205" duration="2147000" />
-      <workItem from="1716560121325" duration="1412000" />
+      <workItem from="1716496436205" duration="1191000" />
+      <workItem from="1716635284988" duration="9146000" />
+      <workItem from="1716747885854" duration="5380000" />
+      <workItem from="1716802197722" duration="16685000" />
+      <workItem from="1716829156711" duration="2016000" />
+      <workItem from="1717611934285" duration="8008000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -297,44 +316,45 @@
       <option name="project" value="LOCAL" />
       <updated>1716497524804</updated>
     </task>
-    <task id="LOCAL-00008" summary="Fixed test">
+    <task id="LOCAL-00008" summary="Added enpoints /data and /metadata and did a lot  of refactoring">
       <option name="closed" value="true" />
-      <created>1716497647152</created>
+      <created>1717618478708</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1716497647152</updated>
+      <updated>1717618478708</updated>
     </task>
-    <task id="LOCAL-00009" summary="Fixed test">
+    <task id="LOCAL-00009" summary="Removed sysout from SwgohComlinkClient">
       <option name="closed" value="true" />
-      <created>1716561462723</created>
+      <created>1717618593914</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1716561462723</updated>
+      <updated>1717618593914</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added response as field of ApiException">
+      <option name="closed" value="true" />
+      <created>1717618781289</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1717618781289</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Optimized exception handling">
+      <option name="closed" value="true" />
+      <created>1717619058696</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1717619058696</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="feature/more-endpoitns" />
-                </option>
-              </RecentGroup>
-            </list>
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -345,7 +365,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="feature/more-endpoitns" />
+                        <option value="develop" />
                       </list>
                     </value>
                   </entry>
@@ -364,8 +384,11 @@
     <MESSAGE value="Prepare for maven central release" />
     <MESSAGE value="Implemented authentication and updated documentation" />
     <MESSAGE value="Removed unnecessary logs from ApiRequestSigner" />
-    <MESSAGE value="Fixed test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed test" />
+    <MESSAGE value="Added enpoints /data and /metadata and did a lot  of refactoring" />
+    <MESSAGE value="Removed sysout from SwgohComlinkClient" />
+    <MESSAGE value="Added response as field of ApiException" />
+    <MESSAGE value="Optimized exception handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimized exception handling" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -379,6 +402,31 @@
           <url>file://$PROJECT_DIR$/src/main/java/de/sf/util/GsonAdapterRegistrar.java</url>
           <line>23</line>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/io/github/doenisf/comlink4j/model/gamedata/GameDataTest.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/io/github/doenisf/comlink4j/SwgohComlinkClientSecureTest.java</url>
+          <line>114</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/SwgohComlinkClient.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/util/ApiRequestSigner.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/util/ApiRequestSigner.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="48" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
