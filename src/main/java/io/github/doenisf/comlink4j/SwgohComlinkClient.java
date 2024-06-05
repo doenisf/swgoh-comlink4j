@@ -107,7 +107,6 @@ public class SwgohComlinkClient implements SwgohComlinkApi {
         Request request = requestBuilder.build();
 
         try (Response response = client.newCall(request).execute()) {
-            System.out.println(response);
             if (!response.isSuccessful() || response.body() == null) {
                 if (response.body() == null) {
                     throw new ApiException("Request failed with status code " + response.code() + ": " + response.message());
