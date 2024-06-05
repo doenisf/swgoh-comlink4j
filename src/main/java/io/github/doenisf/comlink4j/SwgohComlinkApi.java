@@ -1,13 +1,15 @@
 package io.github.doenisf.comlink4j;
 
 import io.github.doenisf.comlink4j.exception.ApiException;
-import io.github.doenisf.comlink4j.model.guild.Guild;
-import io.github.doenisf.comlink4j.model.guild.GuildResponse;
-import io.github.doenisf.comlink4j.model.player.Player;
-import io.github.doenisf.comlink4j.model.player.PlayerArenaProfile;
+import io.github.doenisf.comlink4j.model.endpoints.guild.Guild;
+import io.github.doenisf.comlink4j.model.endpoints.guild.GuildResponse;
+import io.github.doenisf.comlink4j.model.endpoints.player.Player;
+import io.github.doenisf.comlink4j.model.endpoints.player.PlayerArenaProfile;
+import io.github.doenisf.comlink4j.model.gamedata.GameData;
+import io.github.doenisf.comlink4j.model.misc.GameMetaData;
 
 /**
- * Interface for interacting with the SWGOH Comlink API.
+ * Interface for interacting with the SWGoH Comlink API.
  */
 public interface SwgohComlinkApi {
 
@@ -157,7 +159,7 @@ public interface SwgohComlinkApi {
     /**
      * Retrieves guild information by guild ID with optional recent activity.
      *
-     * @param guildId             the ID of the guild
+     * @param guildId               the ID of the guild
      * @param includeRecentActivity whether to include recent guild activity information
      * @return the Guild object
      * @throws ApiException if the request fails
@@ -169,8 +171,8 @@ public interface SwgohComlinkApi {
     /**
      * Retrieves guild information by guild ID with optional enums and recent activity.
      *
-     * @param guildId              the ID of the guild
-     * @param enums                whether to include enums in the response
+     * @param guildId               the ID of the guild
+     * @param enums                 whether to include enums in the response
      * @param includeRecentActivity whether to include recent guild activity information
      * @return the Guild object
      * @throws ApiException if the request fails
@@ -181,13 +183,107 @@ public interface SwgohComlinkApi {
         return ((GuildResponse) postToApi(GuildResponse.class, endpoint, json)).getGuild();
     }
 
+    // /data endpoint
+
+    /**
+     * Fetches game data for the specified version with the option to include PVE units.
+     * Defaults to including PVE units.
+     *
+     * @param version The version of the game data to retrieve.
+     * @return The game data for the specified version.
+     * @throws ApiException If there is an error during the API request.
+     */
+    default GameData getGameData(String version) throws ApiException {
+        return getGameData(version, true);
+    }
+
+    /**
+     * Fetches game data for the specified version with the option to include PVE units and request a specific segment.
+     * Defaults to including PVE units.
+     *
+     * @param version        The version of the game data to retrieve.
+     * @param requestSegment The specific segment of the data to request.
+     * @return The game data for the specified version.
+     * @throws ApiException If there is an error during the API request.
+     */
+    default GameData getGameData(String version, Integer requestSegment) throws ApiException {
+        return getGameData(version, true, requestSegment);
+    }
+
+    /**
+     * Fetches game data for the specified version with the option to include PVE units.
+     * Optionally includes PVE units.
+     *
+     * @param version          The version of the game data to retrieve.
+     * @param includePveUnits  Whether to include PVE units in the response.
+     * @return The game data for the specified version.
+     * @throws ApiException If there is an error during the API request.
+     */
+    default GameData getGameData(String version, Boolean includePveUnits) throws ApiException {
+        return getGameData(version, includePveUnits, 0);
+    }
+
+    /**
+     * Fetches game data for the specified version with options to include PVE units, request a specific segment, and include enums.
+     *
+     * @param version          The version of the game data to retrieve.
+     * @param includePveUnits  Whether to include PVE units in the response.
+     * @param requestSegment   The specific segment of the data to request.
+     * @return The game data for the specified version.
+     * @throws ApiException If there is an error during the API request.
+     */
+    default GameData getGameData(String version, Boolean includePveUnits, Integer requestSegment) throws ApiException {
+        return getGameDate(version, includePveUnits, requestSegment, false);
+    }
+
+    /**
+     * Fetches game data for the specified version with options to include PVE units, request a specific segment, include enums, and specify whether to return enums.
+     *
+     * @param version          The version of the game data to retrieve.
+     * @param includePveUnits  Whether to include PVE units in the response.
+     * @param requestSegment   The specific segment of the data to request.
+     * @param enums            Whether to include enums in the response.
+     * @return The game data for the specified version.
+     * @throws ApiException If there is an error during the API request.
+     */
+    default GameData getGameDate(String version, Boolean includePveUnits, Integer requestSegment, Boolean enums) throws ApiException {
+        String endpoint = "/data";
+        String json = "{\n" +
+                "    \"payload\": \n" +
+                "    {\n" +
+                "        \"version\": \"" + version + "\",\n" +
+                "        \"includePveUnits\": " + includePveUnits + ",\n" +
+                "        \"requestSegment\": " + requestSegment + "\n" +
+                "    },\n" +
+                "    \"enums\": " + enums + "\n" +
+                "}";
+        return (GameData) postToApi(GameData.class, endpoint, json);
+    }
+
+    default GameMetaData getGameMetaData() throws ApiException {
+        String endpoint = "/metadata";
+        return (GameMetaData) postToApi(GameMetaData.class, endpoint);
+    }
     /**
      * Sends a POST request to the specified API endpoint with the given JSON body.
      *
-     * @param <T>       the type of the response object
-     * @param target    the class of the response object
-     * @param endpoint  the API endpoint to send the request to
-     * @param jsonBody  the JSON body to include in the request
+     * @param <T>      the type of the response object
+     * @param target   the class of the response object
+     * @param endpoint the API endpoint to send the request to
+     * @return the response object parsed from JSON
+     * @throws ApiException if the request fails or if there is a network error
+     */
+    default <T> Object postToApi(Class<T> target, String endpoint) throws ApiException {
+        return postToApi(target, endpoint, "{}");
+    }
+
+    /**
+     * Sends a POST request to the specified API endpoint with the given JSON body.
+     *
+     * @param <T>      the type of the response object
+     * @param target   the class of the response object
+     * @param endpoint the API endpoint to send the request to
+     * @param jsonBody the JSON body to include in the request
      * @return the response object parsed from JSON
      * @throws ApiException if the request fails or if there is a network error
      */

@@ -1,8 +1,11 @@
 package io.github.doenisf.comlink4j;
 
-import io.github.doenisf.comlink4j.model.guild.Guild;
-import io.github.doenisf.comlink4j.model.player.Player;
-import io.github.doenisf.comlink4j.model.player.PlayerArenaProfile;
+import io.github.doenisf.comlink4j.exception.ApiException;
+import io.github.doenisf.comlink4j.model.endpoints.guild.Guild;
+import io.github.doenisf.comlink4j.model.endpoints.player.Player;
+import io.github.doenisf.comlink4j.model.endpoints.player.PlayerArenaProfile;
+import io.github.doenisf.comlink4j.model.gamedata.GameData;
+import io.github.doenisf.comlink4j.model.misc.GameMetaData;
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -80,4 +83,36 @@ public class SwgohComlinkClientSecureTest {
         }
     }
 
+    @Test
+    public void testGetGameDataWithoutVersion() {
+        String expectedResponse = "Request failed with status code 400: Client is requesting gamedata version , which doesn't match the latest version on this server.";
+        try {
+            client.getGameData("");
+        } catch (ApiException e) {
+            assertEquals(expectedResponse, e.getCause().getMessage());
+        } catch (Exception e) {
+            fail("Exception should not be thrown: " + e.getMessage());
+        }
+    }
+
+    @Test
+    public void testGetGameData() {
+        try {
+            String version = client.getGameMetaData().getLatestGamedataVersion();
+            GameData gameData = client.getGameData(version);
+            assertNotNull(gameData);
+        } catch (Exception e) {
+            fail("Exception should not be thrown: " + e.getMessage());
+        }
+    }
+
+    @Test
+    public void testGetGameMetaData() {
+        try {
+            GameMetaData metaData = client.getGameMetaData();
+            assertNotNull(metaData.getLatestGamedataVersion());
+        } catch (Exception e) {
+            fail("Exception should not be thrown: " + e);
+        }
+    }
 }
