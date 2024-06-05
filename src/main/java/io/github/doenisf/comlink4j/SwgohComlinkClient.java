@@ -100,7 +100,7 @@ public class SwgohComlinkClient implements SwgohComlinkApi {
                 requestBuilder.addHeader("X-Date", headers.getOrDefault("X-Date", ""));
                 requestBuilder.addHeader("Authorization", headers.getOrDefault("Authorization", ""));
             } catch (NoSuchAlgorithmException | InvalidKeyException e) {
-                throw new ApiException("Error while signing the request.", e);
+                throw new ApiException("Error while signing the request.", e, null);
             }
         }
 
@@ -109,16 +109,16 @@ public class SwgohComlinkClient implements SwgohComlinkApi {
         try (Response response = client.newCall(request).execute()) {
             if (!response.isSuccessful() || response.body() == null) {
                 if (response.body() == null) {
-                    throw new ApiException("Request failed with status code " + response.code() + ": " + response.message());
+                    throw new ApiException("Request failed with status code " + response.code() + ": " + response.message(), response);
                 } else {
                     ErrorResponse errorResponse = gson.fromJson(response.body().string(), ErrorResponse.class);
-                    throw new ApiException("Request failed with status code " + response.code() + ": " + errorResponse.getMessage());
+                    throw new ApiException("Request failed with status code " + response.code() + ": " + errorResponse.getMessage(), response);
                 }
             }
             String jsonResponse = response.body().string();
             return gson.fromJson(jsonResponse, target);
         } catch (IOException | ApiException e) {
-            throw new ApiException("Network error", e);
+            throw new ApiException("Network error", e, null);
         }
     }
 

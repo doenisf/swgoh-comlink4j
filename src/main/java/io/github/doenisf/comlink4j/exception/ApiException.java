@@ -1,13 +1,28 @@
 package io.github.doenisf.comlink4j.exception;
 
+import lombok.Getter;
+import okhttp3.Response;
+
+@Getter
 public class ApiException extends Exception {
+    private final Response apiResponse;
 
-    public ApiException(String message) {
+    public ApiException(Response apiResponse) {
+        this.apiResponse = apiResponse;
+    }
+
+    public ApiException(String message, Response apiResponse) {
         super(message);
+        this.apiResponse = apiResponse;
     }
 
-    public ApiException(String message, Throwable cause) {
+    public ApiException(String message, Throwable cause, Response apiResponse) {
         super(message, cause);
+        this.apiResponse = apiResponse;
     }
 
+    public ApiException(Throwable cause, Response apiResponse) {
+        super(cause);
+        this.apiResponse = apiResponse;
+    }
 }
