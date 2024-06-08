@@ -20,6 +20,6 @@ public class StatMod {
     private Integer xp;
     private CurrencyItem levelCost;
     private Integer bonusQuantity;
-    // TODO: add converted Item
+    private BucketItem convertedItem;
     private Integer rerolledCount;
 }
