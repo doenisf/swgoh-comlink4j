@@ -42,6 +42,9 @@ jobs:
 
       - name: Publish to GitHub Packages
         run: mvn --batch-mode deploy -DskipTests --settings .github/settings.xml
+        env:
+          GITHUB_ACTOR: ${{ github.actor }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   notify:
     needs: [build]
