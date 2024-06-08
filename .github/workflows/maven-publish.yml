@@ -41,7 +41,7 @@ jobs:
         run: mvn --batch-mode clean install -DskipTests
 
       - name: Publish to GitHub Packages
-        run: mvn --batch-mode deploy -DskipTests --settings .gtihub/settings.xml
+        run: mvn --batch-mode deploy -DskipTests --settings .github/settings.xml
 
   notify:
     needs: [build]
