@@ -1,6 +1,7 @@
 package io.github.doenisf.comlink4j.model.gamedata.mod;
 
 import io.github.doenisf.comlink4j.model.gamedata.enums.StatModTier;
+import io.github.doenisf.comlink4j.model.gamedata.item.BucketItem;
 import io.github.doenisf.comlink4j.model.gamedata.item.CurrencyItem;
 import lombok.Getter;
 
