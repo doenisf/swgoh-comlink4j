@@ -51,4 +51,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Send notification
-        run: echo "Build and publish job is completed
+        run: echo "Build and publish job is completed"
