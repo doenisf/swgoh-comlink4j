@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbdc36b4-d0c9-4d4a-8ee7-612896496ca3" name="Changes" comment="Switched everything to swagger generated classes">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-    </list>
+    <list default="true" id="bbdc36b4-d0c9-4d4a-8ee7-612896496ca3" name="Changes" comment="Replaced hand coded model classes with swagger generated classes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -259,7 +255,6 @@
       <workItem from="1716829156711" duration="2016000" />
       <workItem from="1717611934285" duration="8008000" />
       <workItem from="1728157932161" duration="77000" />
-      <workItem from="1728158016602" duration="337000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
