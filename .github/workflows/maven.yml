@@ -7,9 +7,16 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ main, master ]
+    branches:
+      - main
   pull_request:
-    branches: [ main, master ]
+    branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - main
+      - master
 
 jobs:
   build:
@@ -44,9 +51,10 @@ jobs:
           GITHUB_ACTOR: ${{ github.actor }}
           GITHUB_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
 
+
   notify:
     needs: [build]
     runs-on: ubuntu-latest
     steps:
       - name: Send notification
-        run: echo "Build and publish job is completed
+        run: echo "Build and publish job is completed"
