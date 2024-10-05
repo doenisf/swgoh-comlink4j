@@ -19,6 +19,9 @@ jobs:
   build:
     name: Build comlink-swgoh
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        java: [ 17, 21 ]
 
     steps:
       - name: Checkout code
@@ -28,6 +31,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
+          java-version: ${{ matrix.java }}
           server-id: github
           server-username: GITHUB_ACTOR
           server-password: ${{ secrets.GITHUB_TOKEN }}
