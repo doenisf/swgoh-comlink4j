@@ -42,6 +42,13 @@
         <url>https://github.com/doenisf/swgoh-comlink4j/issues</url>
     </issueManagement>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/doenisf/swgoh-comlink4j</url>
+        </repository>
+    </distributionManagement>
+
     <build>
         <plugins>
             <plugin>
