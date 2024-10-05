@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbdc36b4-d0c9-4d4a-8ee7-612896496ca3" name="Changes" comment="Optimized exception handling" />
+    <list default="true" id="bbdc36b4-d0c9-4d4a-8ee7-612896496ca3" name="Changes" comment="Replaced hand coded model classes with swagger generated classes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,12 +41,8 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="feature/data-endpoint" />
-                    <option name="lastUsedInstant" value="1716567086" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="feature/maven-publish" />
-                    <option name="lastUsedInstant" value="1715951926" />
+                    <option name="branchName" value="feature/swagger" />
+                    <option name="lastUsedInstant" value="1728158087" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="develop" />
@@ -107,6 +103,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/Java/swgoh-comlink4j/src/main/java/io/github/doenisf/comlink4j/model&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -115,11 +112,14 @@
     &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Java\swgoh-comlink4j\src\main\java\io\github\doenisf\comlink4j\model" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -254,6 +254,7 @@
       <workItem from="1716802197722" duration="16685000" />
       <workItem from="1716829156711" duration="2016000" />
       <workItem from="1717611934285" duration="8008000" />
+      <workItem from="1728157932161" duration="77000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -343,13 +344,44 @@
       <option name="project" value="LOCAL" />
       <updated>1717619058696</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Replaced hand coded model classes with swagger generated classes">
+      <option name="closed" value="true" />
+      <created>1728154820921</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1728154820921</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Switched everything to swagger generated classes">
+      <option name="closed" value="true" />
+      <created>1728158269986</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1728158269986</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="feature/generated-model-classes" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -383,7 +415,9 @@
     <MESSAGE value="Removed sysout from SwgohComlinkClient" />
     <MESSAGE value="Added response as field of ApiException" />
     <MESSAGE value="Optimized exception handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Optimized exception handling" />
+    <MESSAGE value="Replaced hand coded model classes with swagger generated classes" />
+    <MESSAGE value="Switched everything to swagger generated classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Switched everything to swagger generated classes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -428,6 +462,7 @@
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="de.sf.model.player.rosterUnit.RosterUnit" memberName="equippedStatMod" />
+        <PinnedItemInfo parentTag="io.github.doenisf.comlink4j.model.endpoints.guild.Guild" memberName="profile" />
         <PinnedItemInfo parentTag="de.sf.model.player.rosterUnit.StatModStat" memberName="rolls" />
         <PinnedItemInfo parentTag="de.sf.model.player.rosterUnit.RosterUnit" memberName="unitStat" />
       </pinned-members>
