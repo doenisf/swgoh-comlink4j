@@ -131,12 +131,6 @@ public class MysteryStatModDefinition {
     this.slotOld = slotOld;
   }
 
-
-  public MysteryStatModDefinition setId(String setId) {
-    this.setId = setId;
-    return this;
-  }
-
   /**
    * Get setId
    * @return setId

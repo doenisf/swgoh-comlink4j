@@ -160,12 +160,6 @@ public class StatModDefinition {
     this.slot = slot;
   }
 
-
-  public StatModDefinition setId(String setId) {
-    this.setId = setId;
-    return this;
-  }
-
   /**
    * Get setId
    * @return setId
