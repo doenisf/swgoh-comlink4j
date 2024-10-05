@@ -13,20 +13,121 @@
 
 package io.github.doenisf.comlink4j.model;
 
-import com.google.gson.*;
+import java.util.Objects;
+import com.google.gson.TypeAdapter;
+import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
-import com.google.gson.reflect.TypeToken;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.doenisf.comlink4j.JSON;
-
+import io.github.doenisf.comlink4j.model.Ability;
+import io.github.doenisf.comlink4j.model.AbilityDecisionTree;
+import io.github.doenisf.comlink4j.model.ArtifactDefinition;
+import io.github.doenisf.comlink4j.model.ArtifactTierDefinition;
+import io.github.doenisf.comlink4j.model.BattleEnvironment;
+import io.github.doenisf.comlink4j.model.CalendarCategoryDefinition;
+import io.github.doenisf.comlink4j.model.Campaign;
+import io.github.doenisf.comlink4j.model.Category;
+import io.github.doenisf.comlink4j.model.Challenge;
+import io.github.doenisf.comlink4j.model.ChallengeStyle;
+import io.github.doenisf.comlink4j.model.ConquestDefinition;
+import io.github.doenisf.comlink4j.model.ConquestMission;
+import io.github.doenisf.comlink4j.model.ConsumableDefinition;
+import io.github.doenisf.comlink4j.model.ConsumableTierDefinition;
+import io.github.doenisf.comlink4j.model.ConsumableType;
+import io.github.doenisf.comlink4j.model.ConversionSet;
+import io.github.doenisf.comlink4j.model.Cooldown;
+import io.github.doenisf.comlink4j.model.CraftingMaterialDef;
+import io.github.doenisf.comlink4j.model.DailyActionCap;
+import io.github.doenisf.comlink4j.model.DailyLoginRewardDefinition;
+import io.github.doenisf.comlink4j.model.DatacronAffixTemplateSet;
+import io.github.doenisf.comlink4j.model.DatacronHelpEntry;
+import io.github.doenisf.comlink4j.model.DatacronSet;
+import io.github.doenisf.comlink4j.model.DatacronTemplate;
+import io.github.doenisf.comlink4j.model.Effect;
+import io.github.doenisf.comlink4j.model.EffectTarget;
+import io.github.doenisf.comlink4j.model.EnergyRewardDefinition;
+import io.github.doenisf.comlink4j.model.EnvironmentCollection;
+import io.github.doenisf.comlink4j.model.EquipmentDef;
+import io.github.doenisf.comlink4j.model.EventBonus;
+import io.github.doenisf.comlink4j.model.EventSampling;
+import io.github.doenisf.comlink4j.model.GalacticBundle;
+import io.github.doenisf.comlink4j.model.GuildBannerDef;
+import io.github.doenisf.comlink4j.model.GuildExchangeItem;
+import io.github.doenisf.comlink4j.model.GuildRaid;
+import io.github.doenisf.comlink4j.model.GuildRaidConfig;
+import io.github.doenisf.comlink4j.model.GuildRaidGlobalConfig;
+import io.github.doenisf.comlink4j.model.HelpEntry;
+import io.github.doenisf.comlink4j.model.LinkedStoreItem;
+import io.github.doenisf.comlink4j.model.ModRecommendation;
+import io.github.doenisf.comlink4j.model.MysteryBoxDefinition;
+import io.github.doenisf.comlink4j.model.MysteryStatModDefinition;
+import io.github.doenisf.comlink4j.model.PersistentVfx;
+import io.github.doenisf.comlink4j.model.PlayerPortraitDefinition;
+import io.github.doenisf.comlink4j.model.PlayerTitleDefinition;
+import io.github.doenisf.comlink4j.model.PowerUpBundle;
+import io.github.doenisf.comlink4j.model.Recipe;
+import io.github.doenisf.comlink4j.model.RecommendedSquad;
+import io.github.doenisf.comlink4j.model.RelicTierDefinition;
+import io.github.doenisf.comlink4j.model.Requirement;
+import io.github.doenisf.comlink4j.model.SaveSquadConfig;
+import io.github.doenisf.comlink4j.model.SeasonDefinition;
+import io.github.doenisf.comlink4j.model.SeasonDivisionDefinition;
+import io.github.doenisf.comlink4j.model.SeasonLeagueDefinition;
+import io.github.doenisf.comlink4j.model.SeasonRewardTable;
+import io.github.doenisf.comlink4j.model.SkillDefinition;
+import io.github.doenisf.comlink4j.model.SocialStatus;
+import io.github.doenisf.comlink4j.model.StarterGuildDef;
+import io.github.doenisf.comlink4j.model.StatModDefinition;
+import io.github.doenisf.comlink4j.model.StatModSetDefinition;
+import io.github.doenisf.comlink4j.model.StatProgression;
+import io.github.doenisf.comlink4j.model.Table;
+import io.github.doenisf.comlink4j.model.TargetingSet;
+import io.github.doenisf.comlink4j.model.TerritoryBattleDefinition;
+import io.github.doenisf.comlink4j.model.TerritoryTournamentDailyRewardTable;
+import io.github.doenisf.comlink4j.model.TerritoryTournamentDefinition;
+import io.github.doenisf.comlink4j.model.TerritoryTournamentDivisionDefinition;
+import io.github.doenisf.comlink4j.model.TerritoryTournamentLeagueDefinition;
+import io.github.doenisf.comlink4j.model.TerritoryWarDefinition;
+import io.github.doenisf.comlink4j.model.TimeZoneChangeConfig;
+import io.github.doenisf.comlink4j.model.UnitDef;
+import io.github.doenisf.comlink4j.model.UnitDefPreview;
+import io.github.doenisf.comlink4j.model.UnitGuideDefinition;
+import io.github.doenisf.comlink4j.model.UnitGuideLayout;
+import io.github.doenisf.comlink4j.model.UnlockAnnouncementDefinition;
+import io.github.doenisf.comlink4j.model.WarDef;
+import io.github.doenisf.comlink4j.model.XpTable;
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonDeserializationContext;
+import com.google.gson.JsonDeserializer;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParseException;
+import com.google.gson.TypeAdapterFactory;
+import com.google.gson.reflect.TypeToken;
+import com.google.gson.TypeAdapter;
+import com.google.gson.stream.JsonReader;
+import com.google.gson.stream.JsonWriter;
+import java.io.IOException;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import io.github.doenisf.comlink4j.JSON;
 
 /**
  * GetGameData2XXResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-10-04T16:29:17.254694600+02:00[Europe/Berlin]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-10-05T21:53:04.897531600+02:00[Europe/Berlin]", comments = "Generator version: 7.8.0")
 public class GetGameData2XXResponse {
   public static final String SERIALIZED_NAME_UNITS = "units";
   @SerializedName(SERIALIZED_NAME_UNITS)

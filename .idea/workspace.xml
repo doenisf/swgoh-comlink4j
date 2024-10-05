@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbdc36b4-d0c9-4d4a-8ee7-612896496ca3" name="Changes" comment="Replaced hand coded model classes with swagger generated classes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/exception/ErrorResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/SwgohComlinkClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/SwgohComlinkClient.java" afterDir="false" />
-    </list>
+    <list default="true" id="bbdc36b4-d0c9-4d4a-8ee7-612896496ca3" name="Changes" comment="Replaced hand coded model classes with swagger generated classes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,51 +71,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.ApiRequestSignerTest.testBytesToHex.executor": "Debug",
-    "JUnit.ApiRequestSignerTest.testGetPath.executor": "Run",
-    "JUnit.ApiRequestSignerTest.testSignPostRequest.executor": "Run",
-    "JUnit.GameDataTest.testGameDataParser.executor": "Run",
-    "JUnit.GsonAdapterRegistrarTest.testRegisterEnumAdapters.executor": "Debug",
-    "JUnit.SwgohComlinkClientSecureTest.testGetGameData.executor": "Run",
-    "JUnit.SwgohComlinkClientSecureTest.testGetGameDataWithoutVersion.executor": "Run",
-    "JUnit.SwgohComlinkClientSecureTest.testGetGameMetaData.executor": "Debug",
-    "JUnit.SwgohComlinkClientSecureTest.testGetGuildById.executor": "Run",
-    "JUnit.SwgohComlinkClientTest.executor": "Debug",
-    "JUnit.SwgohComlinkClientTest.testGetGameData.executor": "Debug",
-    "JUnit.SwgohComlinkClientTest.testGetGameDataWithoutVersion.executor": "Debug",
-    "JUnit.SwgohComlinkClientTest.testGetGameMetaData.executor": "Debug",
-    "JUnit.SwgohComlinkClientTest.testGetGuildById.executor": "Run",
-    "JUnit.SwgohComlinkClientTest.testGetPlayerArenaProfileByAllyCode.executor": "Debug",
-    "JUnit.SwgohComlinkClientTest.testGetPlayerArenaProfileById.executor": "Run",
-    "JUnit.SwgohComlinkClientTest.testGetPlayerByAllyCode.executor": "Run",
-    "JUnit.SwgohComlinkClientTest.testGetPlayerById.executor": "Debug",
-    "Maven.swgoh-comlink4j [clean].executor": "Run",
-    "Maven.swgoh-comlink4j [deploy].executor": "Run",
-    "Maven.swgoh-comlink4j [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
-    "Maven.swgoh-comlink4j [org.apache.maven.plugins:maven-deploy-plugin:3.1.1:deploy].executor": "Run",
-    "Maven.swgoh-comlink4j [test].executor": "Run",
-    "OpenAPI/Swagger Code Generator.OAS.yaml.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/Java/swgoh-comlink4j/src/main/java/io/github/doenisf/comlink4j/model",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.import",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.ApiRequestSignerTest.testBytesToHex.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.ApiRequestSignerTest.testGetPath.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ApiRequestSignerTest.testSignPostRequest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GameDataTest.testGameDataParser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GsonAdapterRegistrarTest.testRegisterEnumAdapters.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.SwgohComlinkClientSecureTest.testGetGameData.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SwgohComlinkClientSecureTest.testGetGameDataWithoutVersion.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SwgohComlinkClientSecureTest.testGetGameMetaData.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.SwgohComlinkClientSecureTest.testGetGuildById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SwgohComlinkClientTest.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.SwgohComlinkClientTest.testGetGameData.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.SwgohComlinkClientTest.testGetGameDataWithoutVersion.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.SwgohComlinkClientTest.testGetGameMetaData.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.SwgohComlinkClientTest.testGetGuildById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SwgohComlinkClientTest.testGetPlayerArenaProfileByAllyCode.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.SwgohComlinkClientTest.testGetPlayerArenaProfileById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SwgohComlinkClientTest.testGetPlayerByAllyCode.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SwgohComlinkClientTest.testGetPlayerById.executor&quot;: &quot;Debug&quot;,
+    &quot;Maven.swgoh-comlink4j [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.swgoh-comlink4j [deploy].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.swgoh-comlink4j [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.swgoh-comlink4j [org.apache.maven.plugins:maven-deploy-plugin:3.1.1:deploy].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.swgoh-comlink4j [test].executor&quot;: &quot;Run&quot;,
+    &quot;OpenAPI/Swagger Code Generator.OAS.yaml.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/Java/swgoh-comlink4j/src/main/java/io/github/doenisf/comlink4j/model&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\Java\swgoh-comlink4j\src\main\java\io\github\doenisf\comlink4j\model" />
@@ -257,6 +254,7 @@
       <workItem from="1716802197722" duration="16685000" />
       <workItem from="1716829156711" duration="2016000" />
       <workItem from="1717611934285" duration="8008000" />
+      <workItem from="1728157932161" duration="77000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />

@@ -15,38 +15,50 @@ package io.github.doenisf.comlink4j.model;
 
 import java.util.Objects;
 import com.google.gson.TypeAdapter;
+import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.doenisf.comlink4j.EquipmentSlot;
-import io.github.doenisf.comlink4j.RelicTier;
-import io.github.doenisf.comlink4j.Skill;
-import io.github.doenisf.comlink4j.Stat;
-import io.github.doenisf.comlink4j.StatDef;
-import io.github.doenisf.comlink4j.StatMod;
-import io.github.doenisf.comlink4j.ThreatLevel;
-import io.github.doenisf.comlink4j.UnitTier;
+import io.github.doenisf.comlink4j.model.EquipmentSlot;
+import io.github.doenisf.comlink4j.model.RelicTier;
+import io.github.doenisf.comlink4j.model.Skill;
+import io.github.doenisf.comlink4j.model.Stat;
+import io.github.doenisf.comlink4j.model.StatDef;
+import io.github.doenisf.comlink4j.model.StatMod;
+import io.github.doenisf.comlink4j.model.ThreatLevel;
+import io.github.doenisf.comlink4j.model.UnitTier;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
+import com.google.gson.JsonDeserializationContext;
+import com.google.gson.JsonDeserializer;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import com.google.gson.TypeAdapter;
+import com.google.gson.stream.JsonReader;
+import com.google.gson.stream.JsonWriter;
+import java.io.IOException;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import io.github.doenisf.JSON;
+import io.github.doenisf.comlink4j.JSON;
 
 /**
  * UnitBattleStat
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-10-04T16:29:17.254694600+02:00[Europe/Berlin]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-10-05T21:53:04.897531600+02:00[Europe/Berlin]", comments = "Generator version: 7.8.0")
 public class UnitBattleStat {
   public static final String SERIALIZED_NAME_ACTION_COUNT_MIN = "actionCountMin";
   @SerializedName(SERIALIZED_NAME_ACTION_COUNT_MIN)

@@ -13,14 +13,15 @@
 
 package io.github.doenisf.comlink4j.model;
 
-import io.github.doenisf.ApiException;
+import io.github.doenisf.comlink4j.ApiException;
 import java.util.Objects;
+import java.lang.reflect.Type;
 import java.util.Map;
 
 /**
  * Abstract class for oneOf,anyOf schemas defined in OpenAPI spec
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-10-04T16:29:17.254694600+02:00[Europe/Berlin]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-10-05T21:53:04.897531600+02:00[Europe/Berlin]", comments = "Generator version: 7.8.0")
 public abstract class AbstractOpenApiSchema {
 
     // store the actual instance of the schema/object

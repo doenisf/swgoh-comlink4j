@@ -15,35 +15,47 @@ package io.github.doenisf.comlink4j.model;
 
 import java.util.Objects;
 import com.google.gson.TypeAdapter;
+import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.doenisf.comlink4j.CombatType;
-import io.github.doenisf.comlink4j.ForceAlignment;
-import io.github.doenisf.comlink4j.TerritoryBattleZoneUnitType;
-import io.github.doenisf.comlink4j.TerritoryRewardBracket;
-import io.github.doenisf.comlink4j.TerritoryZoneDefinition;
+import io.github.doenisf.comlink4j.model.CombatType;
+import io.github.doenisf.comlink4j.model.ForceAlignment;
+import io.github.doenisf.comlink4j.model.TerritoryBattleZoneUnitType;
+import io.github.doenisf.comlink4j.model.TerritoryRewardBracket;
+import io.github.doenisf.comlink4j.model.TerritoryZoneDefinition;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
+import com.google.gson.JsonDeserializationContext;
+import com.google.gson.JsonDeserializer;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import com.google.gson.TypeAdapter;
+import com.google.gson.stream.JsonReader;
+import com.google.gson.stream.JsonWriter;
+import java.io.IOException;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import io.github.doenisf.JSON;
+import io.github.doenisf.comlink4j.JSON;
 
 /**
  * TerritoryBattleConflictZoneDefinition
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-10-04T16:29:17.254694600+02:00[Europe/Berlin]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-10-05T21:53:04.897531600+02:00[Europe/Berlin]", comments = "Generator version: 7.8.0")
 public class TerritoryBattleConflictZoneDefinition {
   public static final String SERIALIZED_NAME_COMBAT_TYPE = "combatType";
   @SerializedName(SERIALIZED_NAME_COMBAT_TYPE)
