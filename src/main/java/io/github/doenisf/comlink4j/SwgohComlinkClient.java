@@ -3,7 +3,7 @@ package io.github.doenisf.comlink4j;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import io.github.doenisf.comlink4j.exception.ApiException;
-import io.github.doenisf.comlink4j.model.ErrorResponse;
+import io.github.doenisf.comlink4j.exception.ErrorResponse;
 import io.github.doenisf.comlink4j.util.ApiRequestSigner;
 import io.github.doenisf.comlink4j.util.GsonAdapterRegistrar;
 import okhttp3.*;
