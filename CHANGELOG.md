@@ -2,17 +2,16 @@
 
 <!-- next-version-placeholder-->
 
-## 0.3.0
-- Replaced model classes with classes generated from OAS using swagger generator
+## 0.34.0
+- Switched everything to swagger generated classes
+- Using comlink version 0.34.0
 
 ## 0.2.1
-- Publish should now work via GitHub actions as defined in the [pipeline](.github/workflows/maven-publish.yml)
+- Publish should now work via GitHub actions as defined in the pipeline
 
 ## 0.2.0
 - No parameter constructor now using the default port 3000 instead of 8080
 - Implemented support for authorization with access and secret key
-  - [ApiRequestSigner](./src/main/java/io/github/doenisf/comlink4j/util/ApiRequestSigner.java) to handle
-    authentication via [HMAC Signing](https://github.com/swgoh-utils/swgoh-comlink/wiki/Getting-Started#hmac-signing)
 
 ## 0.1.0
 - Basic implementation to connect to a self-hosted instance of [swgoh-comlink](https://github.com/swgoh-utils/swgoh-comlink)

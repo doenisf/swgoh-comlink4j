@@ -15,29 +15,54 @@ package io.github.doenisf.comlink4j.model;
 
 import java.util.Objects;
 import com.google.gson.TypeAdapter;
+import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import io.github.doenisf.comlink4j.model.AbilityAIParams;
+import io.github.doenisf.comlink4j.model.AbilityButtonLocationType;
+import io.github.doenisf.comlink4j.model.AbilityCooldownType;
+import io.github.doenisf.comlink4j.model.AbilitySynergy;
+import io.github.doenisf.comlink4j.model.AbilityTier;
+import io.github.doenisf.comlink4j.model.AbilityType;
+import io.github.doenisf.comlink4j.model.BattleCondition;
+import io.github.doenisf.comlink4j.model.EffectReference;
+import io.github.doenisf.comlink4j.model.EffectTag;
+import io.github.doenisf.comlink4j.model.EffectTarget;
+import io.github.doenisf.comlink4j.model.MessageDialog;
+import io.github.doenisf.comlink4j.model.UnitDetailsAbilityLocation;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
+import com.google.gson.JsonDeserializationContext;
+import com.google.gson.JsonDeserializer;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
-import io.github.doenisf.comlink4j.JSON;
+import com.google.gson.TypeAdapter;
+import com.google.gson.stream.JsonReader;
+import com.google.gson.stream.JsonWriter;
+import java.io.IOException;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
+
+import io.github.doenisf.comlink4j.JSON;
 
 /**
  * Ability
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-10-04T16:29:17.254694600+02:00[Europe/Berlin]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-10-05T21:53:04.897531600+02:00[Europe/Berlin]", comments = "Generator version: 7.8.0")
 public class Ability {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
