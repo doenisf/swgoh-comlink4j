@@ -4,7 +4,829 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbdc36b4-d0c9-4d4a-8ee7-612896496ca3" name="Changes" comment="Optimized exception handling" />
+    <list default="true" id="bbdc36b4-d0c9-4d4a-8ee7-612896496ca3" name="Changes" comment="Replaced hand coded model classes with swagger generated classes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/JSON.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/Ability.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/AbilityAIParams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/AbilityButtonLocationType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/AbilityCooldownType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/AbilityDecisionNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/AbilityDecisionParamModifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/AbilityDecisionResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/AbilityDecisionResultTarget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/AbilityDecisionTarget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/AbilityDecisionTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/AbilityDecisionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/AbilityModifierData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/AbilityReference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/AbilitySynergy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/AbilityTier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/AbilityType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/AbstractOpenApiSchema.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ActionLink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ActionLinkType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/AdditionalItemModifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ArtifactDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ArtifactTierDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/BattleCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/BattleDeploymentState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/BattleDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/BattleEnvironment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/BattleTargetingTactic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/BattleUnitAbilityState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/BattleUnitState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/BattleUnitStateStat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/BucketItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/CachedRaidRewards.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/CalendarCatchUp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/CalendarCategoryDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/CalendarCompletionBehavior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/CalendarExpiry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/CalendarMissedConsequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/CalendarVisuals.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/Campaign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/CampaignCinematic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/CampaignElementIdentifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/CampaignElementProgress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/CampaignMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/CampaignMissionEnemyPreview.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/CampaignNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/CampaignNodeDifficulty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/CampaignNodeDifficultyGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/CampaignNodeEncounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/CampaignNodeMission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/CampaignType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/CantinaCharacterDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/CategoryMatchType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/Challenge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ChallengeClaimType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ChallengeRewardType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ChallengeStyle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ChallengeTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ChallengeType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/CharacterDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/CinematicTrigger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ClientCacheDomain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ClientCacheEntry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ClientQualityData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ColorType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/CombatType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ConditionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ConditionalBucket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ConfigEntry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ConquestDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ConquestDifficulty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ConquestMission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ConquestNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ConquestNodeStyle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ConquestNodeType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ConquestPurchasePassMiscTextEntry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ConquestPurchasePassMiscTextEntryType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ConquestSector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ConquestVisibility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ConsumableDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ConsumableDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ConsumableTierDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ConsumableType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ContextualMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ContextualMessageGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ContextualMessageType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ContextualStoreItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ConversionItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ConversionItemPrioritized.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ConversionSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/Cooldown.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/CraftingMaterialDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/CrewMember.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/CurrencyItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/CurrencyType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/DailyActionCap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/DailyLoginRewardDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/Datacron.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/DatacronAffix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/DatacronAffixTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/DatacronAffixTemplateSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/DatacronBattleStat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/DatacronHelpEntry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/DatacronScopeIdentifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/DatacronSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/DatacronSetMaterial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/DatacronSetTier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/DatacronTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/DatacronTemplateTier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/DynamicDescription.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/DynamicDescriptionTextAlignmentType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/DynamicDescriptionTextColumn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/DynamicDescriptionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/EADPParameters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/Effect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/EffectApplyType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/EffectDamageType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/EffectReference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/EffectTag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/EffectTagCriteria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/EffectTarget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/EffectTargetBattleSide.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/EffectTargetCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/EffectTargetCategoryCriteria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/EffectTargetUnitSelect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/EffectType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/EnergyRewardDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/EnergyRewardInstance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/EnergyRewardInstanceType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/EnergyType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/EnrollmentStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/EntryCategoryAllowed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/Environment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/EnvironmentCollection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/EquipmentDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/EquipmentSlot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/EquipmentType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/EvaluationType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/EventBonus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/EventSampling.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/Feat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ForceAlignment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ForcedPlayerSquad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GalacticBundle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GalacticBundleMainElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GalacticBundleMainElementInventoryType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GalacticBundleMainElementPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GalacticBundleMainElementType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GalacticBundleTab.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GameEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GameEventDetailsType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GameEventInstance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GameEventStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GameEventType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GameEventUILocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GcActivityLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetEvents2XXResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetEventsRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetGameData2XXResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetGameDataRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetGameDataRequestPayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetGuild2XXResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetGuildLeaderboard2XXResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetGuildLeaderboardRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetGuildLeaderboardRequestPayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetGuildLeaderboardRequestPayloadLeaderboardIdInner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetGuildLeaderboardRequestPayloadLeaderboardIdInnerOneOf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetGuildLeaderboardRequestPayloadLeaderboardIdInnerOneOf1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetGuildLeaderboardRequestPayloadLeaderboardIdInnerOneOf2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetGuildLeaderboardRequestPayloadLeaderboardIdInnerOneOf3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetGuildLeaderboardRequestPayloadLeaderboardIdInnerOneOf4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetGuildLeaderboardRequestPayloadLeaderboardIdInnerOneOf5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetGuildRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetGuildRequestPayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetGuilds2XXResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetGuildsRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetGuildsRequestPayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetLeaderboard2XXResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetLeaderboardRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetLeaderboardRequestPayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetLocalizationBundle2XXResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetLocalizationBundle2XXResponseOneOf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetLocalizationBundleRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetLocalizationBundleRequestPayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetMetaData2XXResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetMetaDataRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetMetaDataRequestPayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetMetaDataRequestPayloadClientSpecs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetPlayer2XXResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetPlayerArenaProfile2XXResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetPlayerArenaProfileRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetPlayerArenaProfileRequestPayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetPlayerRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GetPlayerRequestPayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GraduatingTerritoryReward.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/Guild.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GuildBannerColorDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GuildBannerDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GuildBannerLogoDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GuildEventTracker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GuildExchangeItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GuildInventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GuildInviteStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GuildInviteType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GuildLeaderboard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GuildLeaderboardId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GuildLeaderboardType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GuildMember.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GuildMemberContribution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GuildMemberLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GuildProfile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GuildProgress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GuildRaid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GuildRaidConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GuildRaidGlobalConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GuildRaidLaunchConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GuildRaidLockout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GuildRaidMember.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GuildRaidPointsSummary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GuildRaidProgress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GuildRaidResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GuildRaidRosterRefresh.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GuildRaidRosterRefreshType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GuildRaidSim.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GuildRaidStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GuildRaidType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/GuildStat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/HelpEntry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/HelpTile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/HelpType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ItemType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/LeaderboardGuild.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/LeaderboardPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/LeaderboardStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/LeagueDivisionRewardPreview.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/LinkedStoreItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/LinkedStoreItemType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/LookupActionLink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/LookupMission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/MandatoryRosterUnit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/MaterialType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/MemberContributionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/MemoryLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/MessageDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/MissionGrantedAbility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ModRecommendation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ModRecommendationPrimaryStat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ModRecommendationSetBonus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ModifierItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ModifierLocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ModifierLocationType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/MysteryBoxDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/MysteryStatModDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/OmicronMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/OperationType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/PerformanceLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/PersistentVfx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/PersistentVfxReference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/PlayerPortrait.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/PlayerPortraitDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/PlayerProfileStat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/PlayerProfileTab.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/PlayerPvpProfile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/PlayerRankStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/PlayerRating.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/PlayerSkillRating.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/PlayerTitle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/PlayerTitleDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/PointAtElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/PointAtRotationBehavior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/PointerType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/PowerUpBundle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/RaidAbilityOverride.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/RaidBlackboardPointSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/RaidMember.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/RaidModifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/RaidOutcome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/RaidPointsStructure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/RaidState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/RankRewardPreview.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/Rarity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/Recipe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/RecipeType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/RecommendedSquad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/Relic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/RelicDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/RelicTier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/RelicTierDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/Requirement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/RequirementItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/RequirementType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/RoomData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/RoomType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/SaveSquadConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ScaleItemModifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/SeasonDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/SeasonDivisionDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/SeasonDivisionReference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/SeasonDivisionSkillBoundary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/SeasonLeagueDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/SeasonLeaguePromoteSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/SeasonLeagueReference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/SeasonRewardTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/SeasonRewardTableKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/SeasonRewardTableRow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/SeasonStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/Skill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/SkillDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/SkillDefinitionReference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/SkillTierDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/SkillType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/SkillUpgrade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/SocialStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/SocialStatusGuildBannerColor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/SocialStatusGuildBannerLogo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/SocialStatusIcon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/SocialStatusPortrait.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/SocialStatusTitle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/Squad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/SquadCell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/SquadType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/SquadUnitType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/StarterGuildDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/Stat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/StatDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/StatMod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/StatModDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/StatModSetBonus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/StatModSetDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/StatModSlot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/StatModStat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/StatModTier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/StatProgression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/StatValueRange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/StatValueRangeNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/StorePromoDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/SummonStatTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/SystemModifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/Table.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TableRow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TargetedStat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TargetingSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TargetingWeight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryBattleConflictZoneDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryBattleDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryBattlePlayerStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryBattleResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryBattleStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryBattleZoneUnitType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryBonusZoneDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryConflictZoneStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryCovertMissionResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryCovertZoneDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryCovertZoneStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryGuildProfile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryLocalNote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryMapPhase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryMapStat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryMapStatCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryPlayerDatacronStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryPlayerStat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryPlayerUnitStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryPlayerZoneStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryReconPlatoonDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryReconSquadDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryReconZoneDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryReconZonePlatoon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryReconZoneSquad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryReconZoneStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryReconZoneUnit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryReward.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryRewardBracket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryRewardStructure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryRewardType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryStatCovertZoneResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryStrikeZoneDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryStrikeZoneStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryTournamentConflictZoneDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryTournamentDailyRewardTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryTournamentDailyRewardTableRow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryTournamentDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryTournamentDivisionDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryTournamentDuelZoneDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryTournamentLeagueDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryWarConflictZoneDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryWarConflictZoneStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryWarDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryWarGuildStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryWarParticipant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryWarPlayerStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryWarPointStructure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryWarResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryWarSquad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryWarSquadStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryWarStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryZoneCommandState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryZoneDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryZoneState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TerritoryZoneStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ThreatLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TimeZoneChangeConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/TimeZoneDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/Unit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/UnitBattleStat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/UnitClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/UnitDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/UnitDefPreview.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/UnitDetailsAbilityLocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/UnitGuideActivityType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/UnitGuideDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/UnitGuideLayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/UnitGuideLayoutLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/UnitGuideLayoutTier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/UnitHealthState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/UnitModRecommendation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/UnitReplacement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/UnitStat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/UnitTier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/UnitTierDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/UnitTierSummary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/UnitUpgrade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/UnlockAnnouncementDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/VfxAllocationLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/WarBracketDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/WarDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/WarNodeDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/WarNodeType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/XpTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/XpTableRow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/maven-publish.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven-publish.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/ErrorResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/Feat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/GameEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/GameEventInstance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/MandatoryRosterUnit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/raid/CachedRaidRewards.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/raid/GuildRaidMember.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/raid/GuildRaidPointsSummary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/raid/GuildRaidProgress.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/raid/GuildRaidResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/raid/GuildRaidStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/raid/RaidMember.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/territorybattle/TerritoryBattlePlayerStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/territorybattle/TerritoryBattleResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/territorybattle/TerritoryBattleStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/territorybattle/TerritoryMapStat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/territorybattle/TerritoryPlayerStat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/territorybattle/TerritoryPlayerUnitStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/territorybattle/TerritoryPlayerZoneStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/territorybattle/zone/TerritoryConflictZoneStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/territorybattle/zone/TerritoryCovertZoneStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/territorybattle/zone/TerritoryStatCovertZoneResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/territorybattle/zone/TerritoryStrikeZoneStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/territorybattle/zone/TerritoryZoneStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/territorybattle/zone/recon/TerritoryReconZonePlatoon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/territorybattle/zone/recon/TerritoryReconZoneSquad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/territorybattle/zone/recon/TerritoryReconZoneStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/territorybattle/zone/recon/TerritoryReconZoneUnit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/territorywar/TerritoryGuildProfile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/territorywar/TerritoryPlayerDatacronStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/territorywar/TerritoryWarConflictZoneStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/territorywar/TerritoryWarGuildStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/territorywar/TerritoryWarParticipant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/territorywar/TerritoryWarPlayerStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/territorywar/TerritoryWarResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/territorywar/TerritoryWarSquad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/territorywar/TerritoryWarStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/events/territorywar/UnitTierSummary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/guild/Guild.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/guild/GuildEventTracker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/guild/GuildInventory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/guild/GuildInviteStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/guild/GuildProfile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/guild/GuildProgress.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/guild/GuildResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/guild/GuildStat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/guild/RoomData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/guild/SeasonStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/guild/member/GuildMember.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/guild/member/GuildMemberContribution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/player/Player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/player/PlayerArenaProfile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/player/PlayerRankStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/player/PlayerRating.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/player/PlayerSkillRating.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/player/ProfileStat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/player/PvpProfile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/endpoints/player/Selected.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/GameData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/ability/Ability.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/ability/AbilityAIParams.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/ability/AbilityDecisionNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/ability/AbilityDecisionResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/ability/AbilityDecisionTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/ability/AbilityModifierData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/ability/AbilitySynergy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/ability/AbilityTier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/ability/MissionGrantedAbility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/bundle/GalacticBundle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/bundle/GalacticBundleMainElement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/bundle/GalacticBundleMainElementPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/bundle/GalacticBundleTab.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/campaign/Campaign.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/campaign/CampaignCinematic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/campaign/CampaignMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/campaign/CampaignMissionEnemyPreview.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/campaign/CampaignNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/campaign/CampaignNodeDifficultyGroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/campaign/CampaignNodeEncounter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/campaign/CampaignNodeMission.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/campaign/CinematicTrigger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/challenge/Challenge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/challenge/ChallengeStyle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/challenge/ChallengeTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/configuration/GuildRaidConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/configuration/GuildRaidGlobalConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/configuration/GuildRaidLaunchConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/configuration/SaveSquadConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/configuration/TimeZoneChangeConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/conquest/ConquestDifficulty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/conquest/ConquestMission.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/conquest/ConquestNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/conquest/ConquestPurchasePassMiscTextEntry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/conquest/ConquestSector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/conquest/ConquestVisibility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/datacron/DatacronAffix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/datacron/DatacronAffixTemplate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/datacron/DatacronAffixTemplateSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/datacron/DatacronBattleStat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/datacron/DatacronHelpEntry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/datacron/DatacronSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/datacron/DatacronSetMaterial.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/datacron/DatacronSetTier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/datacron/DatacronTemplate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/datacron/DatacronTemplateTier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/ArtifactDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/ArtifactTierDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/CalendarCategoryDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/ConquestDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/ConsumableDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/ConsumableTierDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/CraftingMaterialDef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/DailyLoginRewardDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/EnergyRewardDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/EquipmentDef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/GuildBannerColorDef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/GuildBannerDef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/GuildBannerLogoDef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/MysteryBoxDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/MysteryStatModDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/PlayerPortraitDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/PlayerTitleDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/RelicDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/RelicTierDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/SeasonDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/SeasonDivisionDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/SeasonLeagueDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/SkillDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/SkillTierDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/StarterGuildDef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/StatDef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/StatModDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/StatModSetDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/TerritoryBattleConflictZoneDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/TerritoryBattleDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/TerritoryBonusZoneDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/TerritoryCovertZoneDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/TerritoryReconPlatoonDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/TerritoryReconSquadDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/TerritoryReconZoneDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/TerritoryStrikeZoneDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/TerritoryTournamentConflictZoneDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/TerritoryTournamentDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/TerritoryTournamentDivisionDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/TerritoryTournamentDuelZoneDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/TerritoryTournamentLeagueDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/TerritoryWarConflictZoneDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/TerritoryWarDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/TerritoryZoneDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/TimeZoneDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/UnitDef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/UnitGuideDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/UnitTierDef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/UnlockAnnouncementDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/WarBracketDef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/WarDef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/definition/WarNodeDef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/dialog/CantinaCharacterDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/dialog/CharacterDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/dialog/StorePromoDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/effect/Effect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/effect/EffectTagCriteria.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/effect/EffectTarget.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/effect/EffectTargetCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/effect/EffectTargetCategoryCriteria.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/AbilityButtonLocationType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/AbilityCooldownType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/AbilityDecisionParamModifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/AbilityDecisionResultTarget.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/AbilityDecisionTarget.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/AbilityDecisionType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/AbilityType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/ActionLinkType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/BattleDeploymentState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/BattleTargetingTactic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/BattleUnitStateStat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/CalendarCatchUp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/CalendarCompletionBehavior.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/CalendarMissedConsequence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/CampaignElementProgress.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/CampaignNodeDifficulty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/CampaignType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/CategoryMatchType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/ChallengeClaimType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/ChallengeRewardType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/ChallengeType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/ColorType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/CombatType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/ConditionType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/ConquestNodeStyle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/ConquestNodeType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/ConquestPurchasePassMiscTextEntryType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/ContextualMessageType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/CurrencyType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/DatacronScopeIdentifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/DynamicDescriptionTextAlignmentType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/DynamicDescriptionType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/EffectApplyType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/EffectDamageType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/EffectTargetBattleSide.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/EffectTargetUnitSelect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/EffectType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/EnergyRewardInstanceType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/EnergyType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/EnrollmentStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/EquipmentType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/EvaluationType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/ForceAlignment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/GalacticBundleMainElementInventoryType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/GalacticBundleMainElementType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/GameEventDetailsType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/GameEventStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/GameEventType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/GameEventUILocation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/GuildInviteType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/GuildMemberLevel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/GuildRaidRosterRefreshType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/GuildRaidType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/HelpType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/ItemType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/LinkedStoreItemType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/MaterialType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/MemberContributionType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/ModifierLocationType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/OmicronMode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/OperationType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/PlayerProfileTab.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/PointAtRotationBehavior.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/PointerType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/RaidOutcome.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/RaidState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/Rarity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/RecipeType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/RelicTier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/RequirementType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/RoomType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/SeasonLeaguePromoteSystem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/SkillType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/SquadType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/SquadUnitType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/StatModSlot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/StatModTier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/TerritoryBattleZoneUnitType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/TerritoryCovertMissionResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/TerritoryMapPhase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/TerritoryRewardStructure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/TerritoryRewardType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/TerritoryWarSquadStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/TerritoryZoneCommandState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/TerritoryZoneState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/ThreatLevel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/UnitClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/UnitDetailsAbilityLocation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/UnitGuideActivityType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/UnitHealthState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/UnitStat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/UnitTier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/enums/WarNodeType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/environment/BattleEnvironment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/environment/Environment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/environment/EnvironmentCollection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/guild/GuildRaid.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/guild/GuildRaidLockout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/guild/GuildRaidRosterRefresh.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/guild/GuildRaidSim.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/item/BucketItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/item/ConditionalBucket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/item/ContextualStoreItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/item/ConversionItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/item/CurrencyItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/item/GuildExchangeItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/item/LinkedStoreItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/item/ModifierItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/item/RequirementItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/message/ContextualMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/message/ContextualMessageGroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/message/MessageDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/ActionLink.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/BattleCondition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/BattleDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/CampaignElementIdentifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/ConsumableDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/ConsumableType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/Cooldown.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/CrewMember.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/DailyActionCap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/EffectTag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/EnergyRewardInstance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/Equipment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/PersistentVfx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/PowerUpBundle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/Recipe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/Relic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/Requirement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/SeasonDivisionSkillBoundary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/Skill.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/calendar/CalendarExpiry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/calendar/CalendarVisuals.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/category/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/category/EntryCategoryAllowed.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/conversion/ConversionItemPrioritized.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/conversion/ConversionSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/description/DynamicDescription.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/description/DynamicDescriptionTextColumn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/event/EventBonus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/event/EventSampling.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/help/HelpEntry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/help/HelpTile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/lookup/LookupActionLink.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/lookup/LookupMission.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/point/PointAtElement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/point/Position.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/table/Table.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/table/TableRow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/targeting/TargetingSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/targeting/TargetingWeight.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/upgrade/SkillUpgrade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/upgrade/UnitUpgrade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/xptable/XpTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/misc/xptable/XpTableRow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/mod/ModRecommendation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/mod/ModRecommendationPrimaryStat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/mod/ModRecommendationSetBonus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/mod/StatMod.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/mod/StatModSetBonus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/mod/StatModStat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/mod/UnitModRecommendation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/modifier/AdditionalItemModifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/modifier/ModifierLocation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/modifier/ScaleItemModifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/modifier/SystemModifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/raid/RaidAbilityOverride.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/raid/RaidBlackboardPointSource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/raid/RaidModifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/raid/RaidPointsStructure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/reference/AbilityReference.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/reference/EffectReference.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/reference/PersistentVfxReference.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/reference/SeasonDivisionReference.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/reference/SeasonLeagueReference.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/reference/SkillDefinitionReference.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/reward/LeagueDivisionRewardPreview.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/reward/RankRewardPreview.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/reward/SeasonRewardTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/reward/SeasonRewardTableKey.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/reward/SeasonRewardTableRow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/social/SocialStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/social/SocialStatusGuildBannerColor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/social/SocialStatusGuildBannerLogo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/social/SocialStatusIcon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/social/SocialStatusPortrait.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/social/SocialStatusTitle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/squad/ForcedPlayerSquad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/squad/RecommendedSquad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/squad/Squad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/squad/SquadCell.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/stat/Stat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/stat/StatProgression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/stat/StatValueRange.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/stat/StatValueRangeNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/stat/SummonStatTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/stat/TargetedStat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/stat/UnitBattleStat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/territory/GraduatingTerritoryReward.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/territory/TerritoryLocalNote.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/territory/TerritoryReward.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/territory/TerritoryRewardBracket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/territory/TerritoryStatMapCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/territory/TerritoryTournamentDailyRewardTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/territory/TerritoryTournamentDailyRewardTableRow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/territory/TerritoryWarPointStructure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/unit/BattleUnitAbilityState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/unit/BattleUnitState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/unit/Unit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/unit/UnitDefPreview.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/unit/UnitGuideLayout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/unit/UnitGuideLayoutLine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/unit/UnitGuideLayoutTier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/gamedata/unit/UnitReplacement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/doenisf/comlink4j/model/misc/GameMetaData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/doenisf/comlink4j/SwgohComlinkClientSecureTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/doenisf/comlink4j/SwgohComlinkClientTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/doenisf/comlink4j/model/gamedata/GameDataTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/doenisf/comlink4j/util/ApiRequestSignerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/doenisf/comlink4j/util/GsonAdapterRegistrarTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/io/github.doenisf.comlink4j/model/gamedata/GameDataResponse.json" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,12 +863,8 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="feature/data-endpoint" />
-                    <option name="lastUsedInstant" value="1716567086" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="feature/maven-publish" />
-                    <option name="lastUsedInstant" value="1715951926" />
+                    <option name="branchName" value="feature/generated-model-classes" />
+                    <option name="lastUsedInstant" value="1728153994" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="develop" />
@@ -75,51 +893,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.ApiRequestSignerTest.testBytesToHex.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.ApiRequestSignerTest.testGetPath.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ApiRequestSignerTest.testSignPostRequest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.GameDataTest.testGameDataParser.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.GsonAdapterRegistrarTest.testRegisterEnumAdapters.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.SwgohComlinkClientSecureTest.testGetGameData.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SwgohComlinkClientSecureTest.testGetGameDataWithoutVersion.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SwgohComlinkClientSecureTest.testGetGameMetaData.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.SwgohComlinkClientSecureTest.testGetGuildById.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SwgohComlinkClientTest.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.SwgohComlinkClientTest.testGetGameData.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.SwgohComlinkClientTest.testGetGameDataWithoutVersion.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.SwgohComlinkClientTest.testGetGameMetaData.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.SwgohComlinkClientTest.testGetGuildById.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SwgohComlinkClientTest.testGetPlayerArenaProfileByAllyCode.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.SwgohComlinkClientTest.testGetPlayerArenaProfileById.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SwgohComlinkClientTest.testGetPlayerByAllyCode.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SwgohComlinkClientTest.testGetPlayerById.executor&quot;: &quot;Debug&quot;,
-    &quot;Maven.swgoh-comlink4j [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.swgoh-comlink4j [deploy].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.swgoh-comlink4j [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.swgoh-comlink4j [org.apache.maven.plugins:maven-deploy-plugin:3.1.1:deploy].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.swgoh-comlink4j [test].executor&quot;: &quot;Run&quot;,
-    &quot;OpenAPI/Swagger Code Generator.OAS.yaml.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.ApiRequestSignerTest.testBytesToHex.executor": "Debug",
+    "JUnit.ApiRequestSignerTest.testGetPath.executor": "Run",
+    "JUnit.ApiRequestSignerTest.testSignPostRequest.executor": "Run",
+    "JUnit.GameDataTest.testGameDataParser.executor": "Run",
+    "JUnit.GsonAdapterRegistrarTest.testRegisterEnumAdapters.executor": "Debug",
+    "JUnit.SwgohComlinkClientSecureTest.testGetGameData.executor": "Run",
+    "JUnit.SwgohComlinkClientSecureTest.testGetGameDataWithoutVersion.executor": "Run",
+    "JUnit.SwgohComlinkClientSecureTest.testGetGameMetaData.executor": "Debug",
+    "JUnit.SwgohComlinkClientSecureTest.testGetGuildById.executor": "Run",
+    "JUnit.SwgohComlinkClientTest.executor": "Debug",
+    "JUnit.SwgohComlinkClientTest.testGetGameData.executor": "Debug",
+    "JUnit.SwgohComlinkClientTest.testGetGameDataWithoutVersion.executor": "Debug",
+    "JUnit.SwgohComlinkClientTest.testGetGameMetaData.executor": "Debug",
+    "JUnit.SwgohComlinkClientTest.testGetGuildById.executor": "Run",
+    "JUnit.SwgohComlinkClientTest.testGetPlayerArenaProfileByAllyCode.executor": "Debug",
+    "JUnit.SwgohComlinkClientTest.testGetPlayerArenaProfileById.executor": "Run",
+    "JUnit.SwgohComlinkClientTest.testGetPlayerByAllyCode.executor": "Run",
+    "JUnit.SwgohComlinkClientTest.testGetPlayerById.executor": "Debug",
+    "Maven.swgoh-comlink4j [clean].executor": "Run",
+    "Maven.swgoh-comlink4j [deploy].executor": "Run",
+    "Maven.swgoh-comlink4j [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
+    "Maven.swgoh-comlink4j [org.apache.maven.plugins:maven-deploy-plugin:3.1.1:deploy].executor": "Run",
+    "Maven.swgoh-comlink4j [test].executor": "Run",
+    "OpenAPI/Swagger Code Generator.OAS.yaml.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "F:/Java/swgoh-comlink4j/src/main/java/io/github/doenisf/comlink4j/model",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.import",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Java\swgoh-comlink4j\src\main\java\io\github\doenisf\comlink4j\model" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -350,6 +1172,21 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="feature/generated-model-classes" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -383,7 +1220,8 @@
     <MESSAGE value="Removed sysout from SwgohComlinkClient" />
     <MESSAGE value="Added response as field of ApiException" />
     <MESSAGE value="Optimized exception handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Optimized exception handling" />
+    <MESSAGE value="Replaced hand coded model classes with swagger generated classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Replaced hand coded model classes with swagger generated classes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -428,6 +1266,7 @@
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="de.sf.model.player.rosterUnit.RosterUnit" memberName="equippedStatMod" />
+        <PinnedItemInfo parentTag="io.github.doenisf.comlink4j.model.endpoints.guild.Guild" memberName="profile" />
         <PinnedItemInfo parentTag="de.sf.model.player.rosterUnit.StatModStat" memberName="rolls" />
         <PinnedItemInfo parentTag="de.sf.model.player.rosterUnit.RosterUnit" memberName="unitStat" />
       </pinned-members>

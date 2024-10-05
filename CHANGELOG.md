@@ -2,6 +2,9 @@
 
 <!-- next-version-placeholder-->
 
+## 0.3.0
+- Replaced model classes with classes generated from OAS using swagger generator
+
 ## 0.2.1
 - Publish should now work via GitHub actions as defined in the [pipeline](.github/workflows/maven-publish.yml)
 
